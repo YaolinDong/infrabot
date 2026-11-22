@@ -1,0 +1,17 @@
+cff-version: 1.2.0
+message: "If you use InfraBot in your work, please cite it as below."
+title: "InfraBot: an open-source seven-axis arm with an STM32H743 controller"
+type: software
+authors:
+  - family-names: Dong
+    given-names: Yaolin
+    email: dong1505lin@gmail.com
+repository-code: "https://github.com/YaolinDong/infrabot"
+url: "https://yaolindong.github.io/infrabot/"
+license: Apache-2.0
+keywords:
+  - robot arm
+  - open hardware
+  - STM32H743
+  - impedance control
+  - admittance control
