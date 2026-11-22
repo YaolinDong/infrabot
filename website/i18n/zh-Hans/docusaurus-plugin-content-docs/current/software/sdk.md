@@ -5,9 +5,7 @@ title: C++ / Python SDK
 
 # C++ / Python SDK
 
-:::info 整理中
-`infrabot-sdk` 仓库正在整理，这里先介绍接口，方便你规划自己的程序。
-:::
+源码、安装和示例：[infrabot-sdk](https://github.com/YaolinDong/infrabot-sdk) · [API 说明](https://github.com/YaolinDong/infrabot-sdk/blob/main/docs/api.md) · [实时循环](https://github.com/YaolinDong/infrabot-sdk/blob/main/docs/realtime.md) · [C++ 示例](https://github.com/YaolinDong/infrabot-sdk/tree/main/examples/cpp) · [Python 示例](https://github.com/YaolinDong/infrabot-sdk/tree/main/examples/python)
 
 SDK 是 Linux 上的 C++17 库，带 Python 绑定。一个 `Robot` 对象负责握手、遥测和指令。Qt 控制界面也使用这套库。
 

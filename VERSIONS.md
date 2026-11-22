@@ -8,7 +8,7 @@ InfraBot releases are versioned per repository. This page lists which versions w
 
 | Release set | Arm | Firmware | SDK | Protocol | Description | Controller |
 |---|---|---|---|---|---|---|
-| 2026.1 (preparing) | H7C | 0.1.0 | 0.1.0 | 1.0 | 0.1.0 | Fire H743 Challenger V2 core module; 4.3-inch carrier board R8 |
+| 2026.1 | H7C | 0.1.0 | 0.1.0 | 1.0 | 0.1.0 | Fire H743 Challenger V2 core module; 4.3-inch carrier board R8 |
 
 ## Protocol rules
 
@@ -31,7 +31,7 @@ InfraBot 每个仓库各自发布版本，这里列出哪些版本可以一起�
 
 | 发布组合 | 机械臂 | 固件 | SDK | 协议 | 描述包 | 控制器 |
 |---|---|---|---|---|---|---|
-| 2026.1（整理中） | H7C | 0.1.0 | 0.1.0 | 1.0 | 0.1.0 | 野火 H743 挑战者 V2 核心板；4.3 寸底板 R8 |
+| 2026.1 | H7C | 0.1.0 | 0.1.0 | 1.0 | 0.1.0 | 野火 H743 挑战者 V2 核心板；4.3 寸底板 R8 |
 
 ### 协议规则
 

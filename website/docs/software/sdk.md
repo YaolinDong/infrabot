@@ -5,9 +5,7 @@ title: C++ and Python SDK
 
 # C++ and Python SDK
 
-:::info Preparing for release
-The `infrabot-sdk` repository is being prepared. This page summarises its interface so that you can plan your application.
-:::
+Source, installation and examples: [infrabot-sdk](https://github.com/YaolinDong/infrabot-sdk) · [API reference](https://github.com/YaolinDong/infrabot-sdk/blob/main/docs/api.md) · [real-time loop](https://github.com/YaolinDong/infrabot-sdk/blob/main/docs/realtime.md) · [C++ examples](https://github.com/YaolinDong/infrabot-sdk/tree/main/examples/cpp) · [Python examples](https://github.com/YaolinDong/infrabot-sdk/tree/main/examples/python)
 
 The SDK is a Linux C++17 library with Python bindings. One `Robot` object handles discovery, telemetry and commands. The Qt control GUI uses the same library.
 

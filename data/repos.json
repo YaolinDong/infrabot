@@ -19,7 +19,7 @@
     },
     {
       "name": "infrabot-firmware",
-      "status": "preparing",
+      "status": "available",
       "version": "0.1.0",
       "license": "Apache-2.0",
       "en": "STM32H743 firmware: 1 kHz joint control, gravity compensation, impedance and admittance, touchscreen UI, signed A/B updates.",
@@ -27,7 +27,7 @@
     },
     {
       "name": "infrabot-sdk",
-      "status": "preparing",
+      "status": "available",
       "version": "0.1.0",
       "license": "Apache-2.0",
       "en": "Linux C++17 and Python SDK over Ethernet, Qt control GUI and firmware update tools.",

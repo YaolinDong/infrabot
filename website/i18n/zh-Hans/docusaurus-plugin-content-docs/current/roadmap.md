@@ -8,8 +8,9 @@ title: 路线图
 |---|---|
 | 机器人描述包、URDF 和 ROS 2 功能包 | 已发布 |
 | 4.3 寸控制底板 R8 | 已发布 |
-| 固件 0.1.0 | 整理中 |
-| C++ / Python SDK 0.1.0 | 整理中 |
+| 固件源码（0.1.0） | 已发布 |
+| C++ / Python SDK 源码（0.1.0） | 已发布 |
+| 签名固件发布包和版本标签 | 计划中 |
 | ROS 2 驱动（`infrabot-ros2`） | 计划中 |
 | LeRobot 插件（`lerobot-robot-infrabot`） | 计划中 |
 | 机械 CAD、物料清单和装配说明（`infrabot-hardware`） | 计划中 |

@@ -36,4 +36,4 @@ Reach, payload and repeatability have not been measured yet. Joint limits, frame
 
 ## Project status
 
-InfraBot is maintained by one person. The [robot description](https://github.com/YaolinDong/infrabot-description) and the [4.3-inch carrier board](https://github.com/YaolinDong/infrabot-pcb-4p3) are published. The firmware and SDK repositories are being prepared for release. A ROS 2 driver, a LeRobot plugin and the mechanical CAD are planned. See the [roadmap](roadmap.md).
+InfraBot is maintained by one person. The [robot description](https://github.com/YaolinDong/infrabot-description) and the [4.3-inch carrier board](https://github.com/YaolinDong/infrabot-pcb-4p3) are published, and so are the [firmware](https://github.com/YaolinDong/infrabot-firmware) and the [SDK](https://github.com/YaolinDong/infrabot-sdk). Signed firmware release packages are not published yet. A ROS 2 driver, a LeRobot plugin and the mechanical CAD are planned. See the [roadmap](roadmap.md).

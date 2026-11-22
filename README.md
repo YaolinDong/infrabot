@@ -15,7 +15,7 @@ English · [简体中文](README.zh-CN.md)
 | 7 + optional gripper | Damiao DM8009P · DM4340P · DM4310 | 4.63 kg | 1 kHz on the MCU | CAN FD, 1 / 5 Mbit/s | Ethernet UDP |
 
 > [!NOTE]
-> InfraBot is maintained by one person and is in its first public release. The robot description and controller board are available now. Firmware and SDK repositories are being prepared for release. Reach, payload and repeatability have not been measured and are therefore not listed.
+> InfraBot is maintained by one person and is in its first public release. The robot description, controller board, firmware and SDK are all published. Signed firmware release packages are not published yet; build the firmware from source. Reach, payload and repeatability have not been measured and are therefore not listed.
 
 ## Highlights
 
@@ -54,8 +54,8 @@ English · [简体中文](README.zh-CN.md)
 |---|---|
 | See the arm in RViz or load the URDF | [infrabot-description](https://github.com/YaolinDong/infrabot-description) |
 | Build the controller board | [infrabot-pcb-4p3](https://github.com/YaolinDong/infrabot-pcb-4p3) · [assembly guide](https://github.com/YaolinDong/infrabot-pcb-4p3/blob/main/docs/assembly.md) |
-| Build and flash the firmware | `infrabot-firmware` (preparing) |
-| Control the arm from C++ or Python | `infrabot-sdk` (preparing) |
+| Build and flash the firmware | [infrabot-firmware](https://github.com/YaolinDong/infrabot-firmware) · [build](https://github.com/YaolinDong/infrabot-firmware/blob/main/docs/build.md) · [flashing](https://github.com/YaolinDong/infrabot-firmware/blob/main/docs/flashing.md) |
+| Control the arm from C++ or Python | [infrabot-sdk](https://github.com/YaolinDong/infrabot-sdk) · [API](https://github.com/YaolinDong/infrabot-sdk/blob/main/docs/api.md) · [examples](https://github.com/YaolinDong/infrabot-sdk/tree/main/examples) |
 | Check which versions work together | [VERSIONS.md](VERSIONS.md) |
 | Operate the arm safely | [SAFETY.md](SAFETY.md) |
 
@@ -66,8 +66,8 @@ English · [简体中文](README.zh-CN.md)
 |---|---|---|---|---|
 | [infrabot-description](https://github.com/YaolinDong/infrabot-description) | H7C URDF, meshes and identified inertia and friction. ROS 2 Jazzy package. | Available | 0.1.0 | Apache-2.0 |
 | [infrabot-pcb-4p3](https://github.com/YaolinDong/infrabot-pcb-4p3) | Four-layer carrier board for the STM32H743 core module and 4.3-inch panel: EasyEDA project, schematics, Gerbers, BOM and CPL. | Available | R8 | CERN-OHL-P-2.0 · MIT · CC-BY-4.0 |
-| `infrabot-firmware` | STM32H743 firmware: 1 kHz joint control, gravity compensation, impedance and admittance, touchscreen UI, signed A/B updates. | Preparing | 0.1.0 | Apache-2.0 |
-| `infrabot-sdk` | Linux C++17 and Python SDK over Ethernet, Qt control GUI and firmware update tools. | Preparing | 0.1.0 | Apache-2.0 |
+| [infrabot-firmware](https://github.com/YaolinDong/infrabot-firmware) | STM32H743 firmware: 1 kHz joint control, gravity compensation, impedance and admittance, touchscreen UI, signed A/B updates. | Available | 0.1.0 | Apache-2.0 |
+| [infrabot-sdk](https://github.com/YaolinDong/infrabot-sdk) | Linux C++17 and Python SDK over Ethernet, Qt control GUI and firmware update tools. | Available | 0.1.0 | Apache-2.0 |
 | `infrabot-ros2` | ROS 2 driver. | Planned | — | — |
 | `lerobot-robot-infrabot` | LeRobot robot plugin for teleoperation, recording and policy deployment. | Planned | — | — |
 | `infrabot-hardware` | Mechanical CAD, bill of materials and assembly guide. | Planned | — | — |

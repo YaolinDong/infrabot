@@ -42,5 +42,13 @@
   "copyright": {
     "message": "Copyright © 2026 YaolinDong（董耀琳）。文档使用 Apache-2.0 许可证。",
     "description": "The footer copyright"
+  },
+  "link.item.label.infrabot-firmware": {
+    "message": "infrabot-firmware",
+    "description": "The label of footer link with label=infrabot-firmware linking to https://github.com/YaolinDong/infrabot-firmware"
+  },
+  "link.item.label.infrabot-sdk": {
+    "message": "infrabot-sdk",
+    "description": "The label of footer link with label=infrabot-sdk linking to https://github.com/YaolinDong/infrabot-sdk"
   }
 }

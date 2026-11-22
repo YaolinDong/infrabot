@@ -9,7 +9,7 @@ Each repository is versioned on its own. A release set lists versions that are t
 
 | Release set | Arm | Firmware | SDK | Protocol | Description | Controller |
 |---|---|---|---|---|---|---|
-| 2026.1 (preparing) | H7C | 0.1.0 | 0.1.0 | 1.0 | 0.1.0 | Fire H743 Challenger V2 core module; 4.3-inch carrier board R8 |
+| 2026.1 | H7C | 0.1.0 | 0.1.0 | 1.0 | 0.1.0 | Fire H743 Challenger V2 core module; 4.3-inch carrier board R8 |
 
 ## Protocol
 

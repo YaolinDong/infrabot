@@ -36,4 +36,4 @@ InfraBot H7C 是一台开源七轴机械臂，关节使用达妙 CAN FD 电机�
 
 ## 项目状态
 
-InfraBot 目前由一个人维护。[机器人描述包](https://github.com/YaolinDong/infrabot-description)和 [4.3 寸控制底板](https://github.com/YaolinDong/infrabot-pcb-4p3)已经发布，固件和 SDK 仓库正在整理。ROS 2 驱动、LeRobot 插件和机械 CAD 在计划中，见[路线图](roadmap.md)。
+InfraBot 目前由一个人维护。[机器人描述包](https://github.com/YaolinDong/infrabot-description)和 [4.3 寸控制底板](https://github.com/YaolinDong/infrabot-pcb-4p3)已经发布，[固件](https://github.com/YaolinDong/infrabot-firmware)和 [SDK](https://github.com/YaolinDong/infrabot-sdk) 也已公开。签名的固件发布包还没有提供。ROS 2 驱动、LeRobot 插件和机械 CAD 在计划中，见[路线图](roadmap.md)。
