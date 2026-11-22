@@ -4,11 +4,13 @@
 
 **开源七轴机械臂：达妙 CAN FD 关节电机，STM32H743 控制器。** 1 kHz 关节控制环直接在机械臂控制器上运行，重力补偿、阻抗和导纳控制也在控制器上完成。PC 通过以太网，用 C++ 或 Python SDK 控制机械臂。
 
-[**文档**](https://yaolindong.github.io/infrabot/zh-Hans/) · [从这里开始](#从这里开始) · [仓库列表](#仓库列表) · [版本兼容](VERSIONS.md) · [安全说明](SAFETY.md)
+[**文档**](https://yaolindong.github.io/infrabot/zh-Hans/) · [演示视频](https://yaolindong.github.io/infrabot/zh-Hans/docs/demos) · [从这里开始](#从这里开始) · [仓库列表](#仓库列表) · [版本兼容](VERSIONS.md) · [安全说明](SAFETY.md)
 
 <p align="center">
-  <img src="website/static/img/h7c.png" width="420" alt="InfraBot H7C 七轴机械臂零位渲染图">
+  <img src="website/static/img/h7c-photo.jpg" width="360" alt="InfraBot H7C 七轴机械臂实物">
+  <img src="website/static/img/gravity-compensation.webp" width="420" alt="重力补偿模式下用手拖动机械臂">
 </p>
+<p align="center"><sub>控制器上的重力补偿，用手拖动。更多视频：<a href="website/static/video/gravity-compensation.mp4">重力补偿</a> · <a href="website/static/video/joint-impedance.mp4">关节阻抗</a> · <a href="website/static/video/cartesian-impedance.mp4">笛卡尔阻抗</a> · <a href="website/static/video/joint-admittance.mp4">关节导纳</a> · <a href="website/static/video/cartesian-admittance.mp4">笛卡尔导纳</a></sub></p>
 
 | 关节 | 电机 | 本体质量 | 控制环 | 关节总线 | 上位机连接 |
 |:---:|:---:|:---:|:---:|:---:|:---:|

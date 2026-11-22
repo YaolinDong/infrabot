@@ -1,0 +1,35 @@
+---
+sidebar_position: 2
+title: Demos
+---
+
+import useBaseUrl from '@docusaurus/useBaseUrl';
+
+export function Clip({name, children}) {
+  return (
+    <figure className="demo">
+      <video controls muted loop playsInline preload="none" poster={useBaseUrl(`/img/${name}-poster.jpg`)}>
+        <source src={useBaseUrl(`/video/${name}.mp4`)} type="video/mp4" />
+      </video>
+      <figcaption>{children}</figcaption>
+    </figure>
+  );
+}
+
+# Demos
+
+Each clip shows a local mode on the controller. The modes run at 1 kHz on the STM32H743 and need no PC command stream; the arm is pushed and guided by hand. The clips are muted and shortened to about 13–23 seconds. See [control modes](firmware/control-modes.md) for how each mode works.
+
+<div className="demos">
+
+<Clip name="gravity-compensation">**Gravity compensation (FREE).** The H7C model cancels gravity. The arm stays where it is released, and joint damping stays active.</Clip>
+
+<Clip name="joint-impedance">**Joint impedance.** A spring and damper on each joint pull the arm back to the equilibrium latched when the mode was entered.</Clip>
+
+<Clip name="cartesian-impedance">**Cartesian impedance.** A spring and damper at the tool pull it back to its latched pose.</Clip>
+
+<Clip name="joint-admittance">**Joint admittance.** Estimated external torque drives a virtual mass per joint, so the joints follow a push.</Clip>
+
+<Clip name="cartesian-admittance">**Cartesian admittance.** The tool follows a push as a virtual mass in Cartesian space.</Clip>
+
+</div>

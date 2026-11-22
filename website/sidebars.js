@@ -5,6 +5,7 @@
 const sidebars = {
   docs: [
     'overview',
+    'demos',
     'safety',
     'compatibility',
     {

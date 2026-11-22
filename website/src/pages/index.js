@@ -17,6 +17,22 @@ function Stat({value, label}) {
   );
 }
 
+function Demo({name, title, children}) {
+  const video = useBaseUrl(`/video/${name}.mp4`);
+  const poster = useBaseUrl(`/img/${name}-poster.jpg`);
+  return (
+    <figure className="demo">
+      <video controls muted loop playsInline preload="none" poster={poster}>
+        <source src={video} type="video/mp4" />
+      </video>
+      <figcaption>
+        <strong>{title}</strong>
+        <span>{children}</span>
+      </figcaption>
+    </figure>
+  );
+}
+
 function PathCard({to, title, children}) {
   return (
     <Link className="path-card" to={to}>
@@ -61,8 +77,8 @@ export default function Home() {
             </div>
           </div>
           <img
-            src={useBaseUrl('/img/h7c.png')}
-            alt={translate({id: 'home.render.alt', message: 'InfraBot H7C rendered at its zero configuration'})}
+            src={useBaseUrl('/img/h7c-photo.jpg')}
+            alt={translate({id: 'home.photo.alt', message: 'The InfraBot H7C arm'})}
           />
         </div>
         <div className="stats">
@@ -91,6 +107,34 @@ export default function Home() {
             <PathCard to="/docs/software/sdk" title={translate({id: 'home.path.sdk', message: 'Program the arm'})}>
               <Translate id="home.path.sdk.text">Connect from C++ or Python, read state and stream commands.</Translate>
             </PathCard>
+          </div>
+        </section>
+        <section className="section">
+          <Heading as="h2">
+            <Translate id="home.demos">Compliance on the controller</Translate>
+          </Heading>
+          <p>
+            <Translate id="home.demos.text">
+              Each mode runs at 1 kHz on the STM32H743 without a PC command stream. The arm is moved by hand in every
+              clip. Videos are muted.
+            </Translate>
+          </p>
+          <div className="demos">
+            <Demo name="gravity-compensation" title={translate({id: 'home.demo.gravity', message: 'Gravity compensation'})}>
+              <Translate id="home.demo.gravity.text">The arm floats and can be guided by hand.</Translate>
+            </Demo>
+            <Demo name="joint-impedance" title={translate({id: 'home.demo.jimp', message: 'Joint impedance'})}>
+              <Translate id="home.demo.jimp.text">Each joint springs back to its equilibrium.</Translate>
+            </Demo>
+            <Demo name="cartesian-impedance" title={translate({id: 'home.demo.cimp', message: 'Cartesian impedance'})}>
+              <Translate id="home.demo.cimp.text">The tool springs back to its pose.</Translate>
+            </Demo>
+            <Demo name="joint-admittance" title={translate({id: 'home.demo.jadm', message: 'Joint admittance'})}>
+              <Translate id="home.demo.jadm.text">Joints follow a push as a virtual mass.</Translate>
+            </Demo>
+            <Demo name="cartesian-admittance" title={translate({id: 'home.demo.cadm', message: 'Cartesian admittance'})}>
+              <Translate id="home.demo.cadm.text">The tool follows a push as a virtual mass.</Translate>
+            </Demo>
           </div>
         </section>
         <section className="section">

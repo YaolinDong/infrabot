@@ -128,6 +128,37 @@
   image-rendering: pixelated;
 }
 
+.demos {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 1.25rem;
+}
+
+.demo {
+  margin: 0;
+}
+
+.demo video {
+  width: 100%;
+  aspect-ratio: 16 / 9;
+  border-radius: 10px;
+  background: #000;
+  display: block;
+}
+
+.demo figcaption {
+  padding-top: 0.5rem;
+  font-size: 0.92rem;
+}
+
+.demo figcaption strong {
+  display: block;
+}
+
+.demo figcaption span {
+  color: var(--ifm-color-emphasis-700);
+}
+
 @media (max-width: 860px) {
   .hero-grid {
     grid-template-columns: 1fr;

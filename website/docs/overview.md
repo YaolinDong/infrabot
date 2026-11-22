@@ -8,7 +8,9 @@ slug: /overview
 
 InfraBot H7C is an open-source seven-axis arm built from Damiao CAN FD joint motors and controlled by an STM32H743 board. The controller closes the joint loop at 1 kHz. It also runs kinematics, gravity compensation, impedance and admittance. A PC connects over Ethernet through a C++ or Python SDK, and the touchscreen on the controller works without a PC.
 
-![InfraBot H7C rendered at its zero configuration](/img/h7c.png)
+![The InfraBot H7C arm](/img/h7c-photo.jpg)
+
+See the arm in gravity compensation, impedance and admittance on the [demos page](demos.mdx).
 
 ## Specifications
 

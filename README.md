@@ -4,11 +4,13 @@ English · [简体中文](README.zh-CN.md)
 
 **An open-source seven-axis arm with Damiao CAN FD joints and an STM32H743 controller.** The controller runs the joint loop at 1 kHz on the arm. It also runs gravity compensation, impedance and admittance control. A PC drives it over Ethernet with a C++ or Python SDK.
 
-[**Documentation**](https://yaolindong.github.io/infrabot/) · [Quick start](#start-here) · [Repositories](#repositories) · [Compatibility](VERSIONS.md) · [Safety](SAFETY.md)
+[**Documentation**](https://yaolindong.github.io/infrabot/) · [Demo videos](https://yaolindong.github.io/infrabot/docs/demos) · [Quick start](#start-here) · [Repositories](#repositories) · [Compatibility](VERSIONS.md) · [Safety](SAFETY.md)
 
 <p align="center">
-  <img src="website/static/img/h7c.png" width="420" alt="InfraBot H7C seven-axis arm, rendered at its zero configuration">
+  <img src="website/static/img/h7c-photo.jpg" width="360" alt="The InfraBot H7C seven-axis arm">
+  <img src="website/static/img/gravity-compensation.webp" width="420" alt="Guiding the arm by hand in gravity compensation">
 </p>
+<p align="center"><sub>Gravity compensation on the controller, guided by hand. More clips: <a href="website/static/video/gravity-compensation.mp4">gravity compensation</a> · <a href="website/static/video/joint-impedance.mp4">joint impedance</a> · <a href="website/static/video/cartesian-impedance.mp4">Cartesian impedance</a> · <a href="website/static/video/joint-admittance.mp4">joint admittance</a> · <a href="website/static/video/cartesian-admittance.mp4">Cartesian admittance</a></sub></p>
 
 | Joints | Actuators | Arm mass | Control loop | Joint bus | Host link |
 |:---:|:---:|:---:|:---:|:---:|:---:|

@@ -14,9 +14,6 @@
   "home.safety": {
     "message": "安全说明"
   },
-  "home.render.alt": {
-    "message": "InfraBot H7C 零位渲染图"
-  },
   "home.stat.joints": {
     "message": "7 轴 + 夹爪"
   },
@@ -79,5 +76,44 @@
   },
   "home.warning.link": {
     "message": "阅读安全说明。"
+  },
+  "home.photo.alt": {
+    "message": "InfraBot H7C 机械臂实物"
+  },
+  "home.demos": {
+    "message": "控制器上的柔顺控制"
+  },
+  "home.demos.text": {
+    "message": "每种模式都在 STM32H743 上以 1 kHz 运行，不需要 PC 持续发指令。每段视频都是用手推动机械臂，视频已去掉声音。"
+  },
+  "home.demo.gravity": {
+    "message": "重力补偿"
+  },
+  "home.demo.gravity.text": {
+    "message": "机械臂悬浮，可以用手拖动。"
+  },
+  "home.demo.jimp": {
+    "message": "关节阻抗"
+  },
+  "home.demo.jimp.text": {
+    "message": "每个关节弹回平衡位置。"
+  },
+  "home.demo.cimp": {
+    "message": "笛卡尔阻抗"
+  },
+  "home.demo.cimp.text": {
+    "message": "末端弹回原来的位姿。"
+  },
+  "home.demo.jadm": {
+    "message": "关节导纳"
+  },
+  "home.demo.jadm.text": {
+    "message": "关节作为虚拟质量顺着推力运动。"
+  },
+  "home.demo.cadm": {
+    "message": "笛卡尔导纳"
+  },
+  "home.demo.cadm.text": {
+    "message": "末端作为虚拟质量顺着推力运动。"
   }
 }

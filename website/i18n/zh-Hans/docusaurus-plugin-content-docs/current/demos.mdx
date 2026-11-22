@@ -1,0 +1,35 @@
+---
+sidebar_position: 2
+title: 演示视频
+---
+
+import useBaseUrl from '@docusaurus/useBaseUrl';
+
+export function Clip({name, children}) {
+  return (
+    <figure className="demo">
+      <video controls muted loop playsInline preload="none" poster={useBaseUrl(`/img/${name}-poster.jpg`)}>
+        <source src={useBaseUrl(`/video/${name}.mp4`)} type="video/mp4" />
+      </video>
+      <figcaption>{children}</figcaption>
+    </figure>
+  );
+}
+
+# 演示视频
+
+每段视频展示控制器上的一种本地模式。这些模式在 STM32H743 上以 1 kHz 运行，不需要 PC 持续发指令；视频里都是用手推动和拖动机械臂。视频已去掉声音，每段约 13–23 秒。各模式的原理见[控制模式](firmware/control-modes.md)。
+
+<div className="demos">
+
+<Clip name="gravity-compensation">**重力补偿（FREE）。** H7C 模型抵消重力，松手后机械臂停在原处，关节阻尼保持生效。</Clip>
+
+<Clip name="joint-impedance">**关节阻抗。** 每个关节上的弹簧阻尼把机械臂拉回进入模式时锁定的平衡位置。</Clip>
+
+<Clip name="cartesian-impedance">**笛卡尔阻抗。** 末端的弹簧阻尼把末端拉回锁定的位姿。</Clip>
+
+<Clip name="joint-admittance">**关节导纳。** 估计的外力矩驱动每个关节的虚拟质量，关节会顺着推力运动。</Clip>
+
+<Clip name="cartesian-admittance">**笛卡尔导纳。** 末端在笛卡尔空间里作为虚拟质量，顺着推力运动。</Clip>
+
+</div>

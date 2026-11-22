@@ -8,7 +8,9 @@ slug: /overview
 
 InfraBot H7C 是一台开源七轴机械臂，关节使用达妙 CAN FD 电机，由 STM32H743 控制板控制。控制器以 1 kHz 闭合关节控制环，同时负责运动学、重力补偿、阻抗和导纳控制。PC 通过以太网用 C++ 或 Python SDK 连接；控制器上的触摸屏不需要 PC 也能使用。
 
-![InfraBot H7C 零位渲染图](/img/h7c.png)
+![InfraBot H7C 机械臂](/img/h7c-photo.jpg)
+
+重力补偿、阻抗和导纳的实拍效果见[演示视频](demos.mdx)。
 
 ## 参数
 
