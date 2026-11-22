@@ -4,11 +4,11 @@ English · [简体中文](#版本兼容)
 
 InfraBot releases are versioned per repository. This page lists which versions work together. The controller and the SDK share one wire protocol. The firmware repository owns the canonical `protocol.h`, and the SDK carries a byte-identical copy that its tests compare.
 
-## Release set
+## Tested versions
 
-| Release set | Arm | Firmware | SDK | Protocol | Description | Controller |
+| Date | Arm | Firmware | SDK | Protocol | Description | Controller |
 |---|---|---|---|---|---|---|
-| 2026.1 | H7C | 0.1.0 | 0.1.0 | 1.0 | 0.1.0 | Fire H743 Challenger V2 core module; 4.3-inch carrier board R8; optional enclosure S8 or C3 |
+| 2026-11-23 | H7C | 0.1.0 | 0.1.0 | 1.0 | 0.1.0 | Fire H743 Challenger V2 core module; 4.3-inch carrier board R8; optional enclosure S8 or C3 |
 
 ## Protocol rules
 
@@ -27,11 +27,11 @@ The firmware's gravity model and the [robot description](https://github.com/Yaol
 
 InfraBot 每个仓库各自发布版本，这里列出哪些版本可以一起使用。控制器和 SDK 使用同一套通信协议：权威的 `protocol.h` 在固件仓库，SDK 里有一份逐字节相同的副本，SDK 的测试会比对两者。
 
-### 发布组合
+### 测试过的版本组合
 
-| 发布组合 | 机械臂 | 固件 | SDK | 协议 | 描述包 | 控制器 |
+| 日期 | 机械臂 | 固件 | SDK | 协议 | 描述包 | 控制器 |
 |---|---|---|---|---|---|---|
-| 2026.1 | H7C | 0.1.0 | 0.1.0 | 1.0 | 0.1.0 | 野火 H743 挑战者 V2 核心板；4.3 寸底板 R8；可选外壳 S8 或 C3 |
+| 2026-11-23 | H7C | 0.1.0 | 0.1.0 | 1.0 | 0.1.0 | 野火 H743 挑战者 V2 核心板；4.3 寸底板 R8；可选外壳 S8 或 C3 |
 
 ### 协议规则
 
