@@ -6,13 +6,16 @@ title: System architecture
 # System architecture
 
 ```text
-PC ── C++ / Python SDK, Qt GUI ── Ethernet UDP ──┐
-                                                  ▼
-          STM32H743 controller on the carrier board, with a touch panel
+PC: C++ / Python SDK, Qt GUI
+ ▲
+ │  Ethernet UDP: commands down, telemetry and replies up
+ ▼
+Controller: STM32H743 on the carrier board, with a touch panel
             1 kHz joint loop · kinematics · gravity · impedance · admittance
-                                                  │ CAN FD
-                                                  ▼
-          J1–J2 DM8009P · J3–J4 DM4340P · J5–J7 DM4310 · J8 gripper
+ ▲
+ │  CAN FD: drive commands down, motor feedback up
+ ▼
+Joint motors: J1–J2 DM8009P · J3–J4 DM4340P · J5–J7 DM4310 · J8 gripper
 ```
 
 - **The controller owns the drives.** Only the STM32H743 talks to the motors. PCs send targets or mode requests over UDP.

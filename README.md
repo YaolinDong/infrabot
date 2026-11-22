@@ -7,8 +7,8 @@ English · [简体中文](README.zh-CN.md)
 [**Documentation**](https://yaolindong.github.io/infrabot/) · [Demo videos](https://yaolindong.github.io/infrabot/docs/demos) · [Quick start](#start-here) · [Repositories](#repositories) · [Compatibility](VERSIONS.md) · [Safety](SAFETY.md)
 
 <p align="center">
-  <img src="website/static/img/h7c-photo.jpg" width="360" alt="The InfraBot H7C seven-axis arm">
-  <img src="website/static/img/gravity-compensation.webp" width="420" alt="Guiding the arm by hand in gravity compensation">
+  <img src="website/static/img/h7c-photo.jpg" height="250" alt="The InfraBot H7C seven-axis arm">
+  <img src="website/static/img/gravity-compensation.webp" height="250" alt="Guiding the arm by hand in gravity compensation">
 </p>
 <p align="center"><sub>Gravity compensation on the controller, guided by hand. More clips: <a href="website/static/video/gravity-compensation.mp4">gravity compensation</a> · <a href="website/static/video/joint-impedance.mp4">joint impedance</a> · <a href="website/static/video/cartesian-impedance.mp4">Cartesian impedance</a> · <a href="website/static/video/joint-admittance.mp4">joint admittance</a> · <a href="website/static/video/cartesian-admittance.mp4">Cartesian admittance</a></sub></p>
 
@@ -61,13 +61,16 @@ English · [简体中文](README.zh-CN.md)
 ## How it fits together
 
 ```text
-PC ── C++ / Python SDK, Qt GUI ── Ethernet UDP ──┐
-                                                  ▼
-          STM32H743 controller on the carrier board, with a touch panel
+PC: C++ / Python SDK, Qt GUI
+ ▲
+ │  Ethernet UDP: commands down, telemetry and replies up
+ ▼
+Controller: STM32H743 on the carrier board, with a touch panel
             1 kHz joint loop · kinematics · gravity · impedance · admittance
-                                                  │ CAN FD
-                                                  ▼
-          J1–J2 DM8009P · J3–J4 DM4340P · J5–J7 DM4310 · J8 gripper
+ ▲
+ │  CAN FD: drive commands down, motor feedback up
+ ▼
+Joint motors: J1–J2 DM8009P · J3–J4 DM4340P · J5–J7 DM4310 · J8 gripper
 ```
 
 The controller is the single owner of the drives. One PC holds the control lease at a time. The touchscreen can STOP the arm at any time. The wire protocol is versioned: the SDK checks the controller's protocol major version before it starts sending commands. See [VERSIONS.md](VERSIONS.md) for which releases work together.

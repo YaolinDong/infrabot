@@ -7,8 +7,8 @@
 [**文档**](https://yaolindong.github.io/infrabot/zh-Hans/) · [演示视频](https://yaolindong.github.io/infrabot/zh-Hans/docs/demos) · [从这里开始](#从这里开始) · [仓库列表](#仓库列表) · [版本兼容](VERSIONS.md) · [安全说明](SAFETY.md)
 
 <p align="center">
-  <img src="website/static/img/h7c-photo.jpg" width="360" alt="InfraBot H7C 七轴机械臂实物">
-  <img src="website/static/img/gravity-compensation.webp" width="420" alt="重力补偿模式下用手拖动机械臂">
+  <img src="website/static/img/h7c-photo.jpg" height="250" alt="InfraBot H7C 七轴机械臂实物">
+  <img src="website/static/img/gravity-compensation.webp" height="250" alt="重力补偿模式下用手拖动机械臂">
 </p>
 <p align="center"><sub>控制器上的重力补偿，用手拖动。更多视频：<a href="website/static/video/gravity-compensation.mp4">重力补偿</a> · <a href="website/static/video/joint-impedance.mp4">关节阻抗</a> · <a href="website/static/video/cartesian-impedance.mp4">笛卡尔阻抗</a> · <a href="website/static/video/joint-admittance.mp4">关节导纳</a> · <a href="website/static/video/cartesian-admittance.mp4">笛卡尔导纳</a></sub></p>
 
@@ -61,13 +61,16 @@
 ## 整体结构
 
 ```text
-PC ── C++ / Python SDK、Qt 界面 ── 以太网 UDP ──┐
-                                                 ▼
-          底板上的 STM32H743 控制器，带触摸屏
-            1 kHz 关节控制环 · 运动学 · 重力补偿 · 阻抗 · 导纳
-                                                 │ CAN FD
-                                                 ▼
-          J1–J2 DM8009P · J3–J4 DM4340P · J5–J7 DM4310 · J8 夹爪
+PC：C++ / Python SDK、Qt 界面
+ ▲
+ │  以太网 UDP：指令向下，遥测和回复向上
+ ▼
+控制器：底板上的 STM32H743，带触摸屏
+        1 kHz 关节控制环 · 运动学 · 重力补偿 · 阻抗 · 导纳
+ ▲
+ │  CAN FD：驱动指令向下，电机反馈向上
+ ▼
+关节电机：J1–J2 DM8009P · J3–J4 DM4340P · J5–J7 DM4310 · J8 夹爪
 ```
 
 所有驱动器只由控制器直接控制。同一时间只有一台 PC 拥有控制权，触摸屏随时可以按 STOP。通信协议带版本号：SDK 连接时先核对控制器的协议主版本，一致后才开始发送指令。哪些版本可以一起使用，见 [VERSIONS.md](VERSIONS.md)。
