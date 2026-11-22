@@ -1,0 +1,11 @@
+blank_issues_enabled: false
+contact_links:
+  - name: Robot description (URDF, meshes, ROS 2 package)
+    url: https://github.com/YaolinDong/infrabot-description/issues
+    about: Problems with the model or its tools.
+  - name: Controller board
+    url: https://github.com/YaolinDong/infrabot-pcb-4p3/issues
+    about: Schematics, PCB, BOM and assembly.
+  - name: Security issue
+    url: https://github.com/YaolinDong/infrabot/blob/main/SECURITY.md
+    about: Report privately, not in a public issue.

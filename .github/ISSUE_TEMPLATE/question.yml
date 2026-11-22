@@ -1,0 +1,19 @@
+name: Cross-repository question
+description: Questions that involve more than one component, for example firmware and SDK versions.
+labels: [question]
+body:
+  - type: textarea
+    id: question
+    attributes:
+      label: Question
+    validations:
+      required: true
+  - type: input
+    id: versions
+    attributes:
+      label: Versions
+      description: Firmware, SDK, description and carrier board revision, if known.
+  - type: textarea
+    id: context
+    attributes:
+      label: What have you tried?
