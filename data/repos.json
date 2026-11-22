@@ -18,6 +18,14 @@
       "zh": "STM32H743 核心板和 4.3 寸屏的四层底板：嘉立创 EDA 工程、原理图、Gerber、BOM 和坐标文件。"
     },
     {
+      "name": "infrabot-enclosure-4p3",
+      "status": "available",
+      "version": "S8 · C3",
+      "license": "CERN-OHL-P-2.0 · MIT · CC-BY-4.0",
+      "en": "3D-printable enclosures for the 4.3-inch controller: Simple S8 with two shells and Deluxe C3 with keycaps and light pipes. STL and STEP.",
+      "zh": "4.3 寸控制器的 3D 打印外壳：简单版 S8 为上下壳两件，精装版 C3 带键帽和导光柱。提供 STL 和 STEP。"
+    },
+    {
       "name": "infrabot-firmware",
       "status": "available",
       "version": "0.1.0",
@@ -54,8 +62,8 @@
       "status": "planned",
       "version": "",
       "license": "",
-      "en": "Mechanical CAD, bill of materials and assembly guide.",
-      "zh": "机械 CAD、物料清单和装配说明。"
+      "en": "Arm mechanical CAD, bill of materials and assembly guide.",
+      "zh": "机械臂的机械 CAD、物料清单和装配说明。"
     }
   ]
 }

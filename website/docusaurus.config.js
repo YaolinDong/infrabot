@@ -93,6 +93,7 @@ const config = {
             items: [
               {label: 'infrabot-description', href: `${github}/infrabot-description`},
               {label: 'infrabot-pcb-4p3', href: `${github}/infrabot-pcb-4p3`},
+              {label: 'infrabot-enclosure-4p3', href: `${github}/infrabot-enclosure-4p3`},
               {label: 'infrabot-firmware', href: `${github}/infrabot-firmware`},
               {label: 'infrabot-sdk', href: `${github}/infrabot-sdk`},
             ],

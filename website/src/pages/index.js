@@ -99,7 +99,7 @@ export default function Home() {
               <Translate id="home.path.model.text">Load the H7C URDF in RViz or another tool. No hardware needed.</Translate>
             </PathCard>
             <PathCard to="/docs/hardware/controller-board" title={translate({id: 'home.path.board', message: 'Build the controller'})}>
-              <Translate id="home.path.board.text">Order the 4.3-inch carrier board from its Gerbers, BOM and CPL.</Translate>
+              <Translate id="home.path.board.text">Order the 4.3-inch carrier board from its Gerbers, BOM and CPL, then print its enclosure.</Translate>
             </PathCard>
             <PathCard to="/docs/firmware/control-modes" title={translate({id: 'home.path.firmware', message: 'Understand the firmware'})}>
               <Translate id="home.path.firmware.text">Control modes, stopping behaviour, the touchscreen and signed updates.</Translate>

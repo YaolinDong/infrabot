@@ -45,7 +45,7 @@
     "message": "制作控制器"
   },
   "home.path.board.text": {
-    "message": "用 Gerber、BOM 和坐标文件下单制作 4.3 寸控制底板。"
+    "message": "用 Gerber、BOM 和坐标文件下单制作 4.3 寸控制底板，再打印外壳。"
   },
   "home.path.firmware": {
     "message": "了解固件"

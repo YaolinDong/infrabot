@@ -15,7 +15,7 @@ English · [简体中文](README.zh-CN.md)
 | 7 + optional gripper | Damiao DM8009P · DM4340P · DM4310 | 4.63 kg | 1 kHz on the MCU | CAN FD, 1 / 5 Mbit/s | Ethernet UDP |
 
 > [!NOTE]
-> InfraBot is maintained by one person and is in its first public release. The robot description, controller board, firmware and SDK are all published. Signed firmware release packages are not published yet; build the firmware from source. Reach, payload and repeatability have not been measured and are therefore not listed.
+> InfraBot is maintained by one person and is in its first public release. The robot description, controller board and its enclosure, firmware and SDK are all published. Signed firmware release packages are not published yet; build the firmware from source. Reach, payload and repeatability have not been measured and are therefore not listed.
 
 ## Highlights
 
@@ -23,7 +23,7 @@ English · [简体中文](README.zh-CN.md)
 - **Real-time and planned motion.** The host can stream 1 kHz joint or Cartesian targets, or submit `movej` and `movep` goals that the controller interpolates.
 - **Touchscreen in English and Chinese.** The 4.3-inch panel shows drive status, network settings, compliance parameters and a 3D view of the arm, with STOP on every page. The 5-inch panel uses an English layout.
 - **Signed A/B firmware updates.** Updates are installed over Ethernet with approval on the touchscreen. A failed trial boot reverts to the previous application. SWD recovery is also supported.
-- **Open hardware and models.** The carrier board ships with editable EasyEDA sources and Gerbers. The URDF includes identified inertia and friction.
+- **Open hardware and models.** The carrier board ships with editable EasyEDA sources and Gerbers, and its 3D-printed enclosure with STL and STEP. The URDF includes identified inertia and friction.
 - **Supervised stopping.** Stream loss, stale feedback and drive faults bring the arm to a controlled stop in an enabled hold. A separately wired hardware emergency stop is still required. Read the [safety guide](SAFETY.md) first.
 
 ## Demos
@@ -73,6 +73,7 @@ English · [简体中文](README.zh-CN.md)
 |---|---|
 | See the arm in RViz or load the URDF | [infrabot-description](https://github.com/YaolinDong/infrabot-description) |
 | Build the controller board | [infrabot-pcb-4p3](https://github.com/YaolinDong/infrabot-pcb-4p3) · [assembly guide](https://github.com/YaolinDong/infrabot-pcb-4p3/blob/main/docs/assembly.md) |
+| Print an enclosure for the controller | [infrabot-enclosure-4p3](https://github.com/YaolinDong/infrabot-enclosure-4p3) · [S8 assembly](https://github.com/YaolinDong/infrabot-enclosure-4p3/blob/main/simple/README.md) · [C3 assembly](https://github.com/YaolinDong/infrabot-enclosure-4p3/blob/main/deluxe/README.md) |
 | Build and flash the firmware | [infrabot-firmware](https://github.com/YaolinDong/infrabot-firmware) · [build](https://github.com/YaolinDong/infrabot-firmware/blob/main/docs/build.md) · [flashing](https://github.com/YaolinDong/infrabot-firmware/blob/main/docs/flashing.md) |
 | Control the arm from C++ or Python | [infrabot-sdk](https://github.com/YaolinDong/infrabot-sdk) · [API](https://github.com/YaolinDong/infrabot-sdk/blob/main/docs/api.md) · [examples](https://github.com/YaolinDong/infrabot-sdk/tree/main/examples) |
 | Check which versions work together | [VERSIONS.md](VERSIONS.md) |
@@ -85,11 +86,12 @@ English · [简体中文](README.zh-CN.md)
 |---|---|---|---|---|
 | [infrabot-description](https://github.com/YaolinDong/infrabot-description) | H7C URDF, meshes and identified inertia and friction. ROS 2 Jazzy package. | Available | 0.1.0 | Apache-2.0 |
 | [infrabot-pcb-4p3](https://github.com/YaolinDong/infrabot-pcb-4p3) | Four-layer carrier board for the STM32H743 core module and 4.3-inch panel: EasyEDA project, schematics, Gerbers, BOM and CPL. | Available | R8 | CERN-OHL-P-2.0 · MIT · CC-BY-4.0 |
+| [infrabot-enclosure-4p3](https://github.com/YaolinDong/infrabot-enclosure-4p3) | 3D-printable enclosures for the 4.3-inch controller: Simple S8 with two shells and Deluxe C3 with keycaps and light pipes. STL and STEP. | Available | S8 · C3 | CERN-OHL-P-2.0 · MIT · CC-BY-4.0 |
 | [infrabot-firmware](https://github.com/YaolinDong/infrabot-firmware) | STM32H743 firmware: 1 kHz joint control, gravity compensation, impedance and admittance, touchscreen UI, signed A/B updates. | Available | 0.1.0 | Apache-2.0 |
 | [infrabot-sdk](https://github.com/YaolinDong/infrabot-sdk) | Linux C++17 and Python SDK over Ethernet, Qt control GUI and firmware update tools. | Available | 0.1.0 | Apache-2.0 |
 | `infrabot-ros2` | ROS 2 driver. | Planned | — | — |
 | `lerobot-robot-infrabot` | LeRobot robot plugin for teleoperation, recording and policy deployment. | Planned | — | — |
-| `infrabot-hardware` | Mechanical CAD, bill of materials and assembly guide. | Planned | — | — |
+| `infrabot-hardware` | Arm mechanical CAD, bill of materials and assembly guide. | Planned | — | — |
 <!-- repos:end -->
 
 ## How it fits together
@@ -122,7 +124,7 @@ If InfraBot helps your work, you can cite it using [CITATION.cff](CITATION.cff).
 
 ## License
 
-Each repository states its own license. Software, firmware and the robot description use Apache-2.0. The carrier board design uses CERN-OHL-P-2.0, its tools use MIT, and its documentation and images use CC-BY-4.0. Third-party components keep their original licenses. Each repository lists them in its own notices.
+Each repository states its own license. Software, firmware and the robot description use Apache-2.0. The carrier board and enclosure designs use CERN-OHL-P-2.0, their tools use MIT, and their documentation and images use CC-BY-4.0. Third-party components keep their original licenses. Each repository lists them in its own notices.
 
 This repository, including its website, documentation and images, is licensed under [Apache-2.0](LICENSE). The carrier board render `website/static/img/pcb-4p3.png` comes from [infrabot-pcb-4p3](https://github.com/YaolinDong/infrabot-pcb-4p3) and stays under CC-BY-4.0.
 

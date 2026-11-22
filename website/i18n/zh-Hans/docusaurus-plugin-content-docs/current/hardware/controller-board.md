@@ -23,3 +23,12 @@ title: 控制底板
 底板上的 STOP 和 RESUME 是由固件读取的普通按键。**底板没有独立的急停电路。** 见[安全](../safety.md)。
 
 下单、装配和接口细节：[装配指南](https://github.com/YaolinDong/infrabot-pcb-4p3/blob/main/docs/assembly.md) · [接口说明](https://github.com/YaolinDong/infrabot-pcb-4p3/blob/main/docs/interfaces.md) · [制造文件](https://github.com/YaolinDong/infrabot-pcb-4p3/tree/main/manufacturing/R8)。
+
+## 外壳
+
+[infrabot-enclosure-4p3](https://github.com/YaolinDong/infrabot-enclosure-4p3) 提供 R8 底板、核心板和 4.3 寸屏的 3D 打印外壳，有 STL 和 STEP 文件：
+
+- **简单版 S8**：上下壳两件，直接使用板上的按键和指示灯。
+- **精装版 C3**：9 个打印件，带 4 个键帽和 2 根透明导光柱，另有 2 个选用的试装件。
+
+两版目前都是试装模型。合壳前请用实物核对玻璃高度、铜柱螺纹深度和配对插头。

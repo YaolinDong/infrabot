@@ -6,6 +6,9 @@ contact_links:
   - name: Controller board
     url: https://github.com/YaolinDong/infrabot-pcb-4p3/issues
     about: Schematics, PCB, BOM and assembly.
+  - name: Controller enclosure
+    url: https://github.com/YaolinDong/infrabot-enclosure-4p3/issues
+    about: Printed parts, fit and assembly hardware.
   - name: Security issue
     url: https://github.com/YaolinDong/infrabot/blob/main/SECURITY.md
     about: Report privately, not in a public issue.

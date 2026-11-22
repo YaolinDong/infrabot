@@ -23,3 +23,12 @@ The firmware also supports the 5-inch 800×480 panel on the core module without 
 The board's STOP and RESUME keys are ordinary inputs that the firmware reads. **The board has no independent emergency-stop circuit.** See [Safety](../safety.md).
 
 Ordering, assembly and interface details: [assembly guide](https://github.com/YaolinDong/infrabot-pcb-4p3/blob/main/docs/assembly.md) · [interfaces](https://github.com/YaolinDong/infrabot-pcb-4p3/blob/main/docs/interfaces.md) · [manufacturing files](https://github.com/YaolinDong/infrabot-pcb-4p3/tree/main/manufacturing/R8).
+
+## Enclosure
+
+[infrabot-enclosure-4p3](https://github.com/YaolinDong/infrabot-enclosure-4p3) has 3D-printable enclosures for the R8 board, the core module and the 4.3-inch panel, with STL and STEP files:
+
+- **Simple S8**: two shells. The board's own switches and LEDs are used directly.
+- **Deluxe C3**: nine printed parts with four keycaps and two transparent light pipes, plus two optional fit-test parts.
+
+Both are fit prototypes. Check the glass height, spacer threads and mating plugs against your hardware before closing the case.

@@ -15,7 +15,7 @@
 | 7 轴 + 可选夹爪 | 达妙 DM8009P · DM4340P · DM4310 | 4.63 kg | MCU 上 1 kHz | CAN FD，1 / 5 Mbit/s | 以太网 UDP |
 
 > [!NOTE]
-> InfraBot 目前由一个人维护，这是第一次公开发布。机器人描述包、控制底板、固件和 SDK 都已经公开。签名的固件发布包还没有提供，目前请从源码编译固件。工作半径、负载和重复定位精度还没有实测，所以这里没有列出。
+> InfraBot 目前由一个人维护，这是第一次公开发布。机器人描述包、控制底板及其外壳、固件和 SDK 都已经公开。签名的固件发布包还没有提供，目前请从源码编译固件。工作半径、负载和重复定位精度还没有实测，所以这里没有列出。
 
 ## 特点
 
@@ -23,7 +23,7 @@
 - **实时和规划两种运动方式。** PC 可以 1 kHz 发送关节或笛卡尔目标，也可以提交 `movej`、`movep` 目标，由控制器插值执行。
 - **中英文触摸屏。** 4.3 寸屏显示电机状态、网络设置、柔顺控制参数和机械臂三维视图，每一页都有 STOP 按钮；5 寸屏使用英文界面。
 - **签名 A/B 固件升级。** 通过以太网升级，需要在触摸屏上确认；试启动失败会回到原来的固件，也支持 SWD 恢复。
-- **开放的硬件和模型。** 控制底板提供可编辑的嘉立创 EDA 工程和 Gerber，URDF 带有辨识得到的惯量和摩擦参数。
+- **开放的硬件和模型。** 控制底板提供可编辑的嘉立创 EDA 工程和 Gerber，外壳提供可直接打印的 STL 和 STEP，URDF 带有辨识得到的惯量和摩擦参数。
 - **有监控的停止。** 指令断流、反馈过期、驱动器故障时，机械臂会受控停止，保持使能。仍然必须另外接一个独立接线的硬件急停。使用前请先读[安全说明](SAFETY.md)。
 
 ## 演示
@@ -73,6 +73,7 @@
 |---|---|
 | 在 RViz 里查看机械臂，或者加载 URDF | [infrabot-description](https://github.com/YaolinDong/infrabot-description) |
 | 制作控制底板 | [infrabot-pcb-4p3](https://github.com/YaolinDong/infrabot-pcb-4p3) · [装配指南](https://github.com/YaolinDong/infrabot-pcb-4p3/blob/main/docs/assembly.md) |
+| 打印控制器外壳 | [infrabot-enclosure-4p3](https://github.com/YaolinDong/infrabot-enclosure-4p3) · [S8 装配](https://github.com/YaolinDong/infrabot-enclosure-4p3/blob/main/simple/README.zh-CN.md) · [C3 装配](https://github.com/YaolinDong/infrabot-enclosure-4p3/blob/main/deluxe/README.zh-CN.md) |
 | 编译并烧录固件 | [infrabot-firmware](https://github.com/YaolinDong/infrabot-firmware) · [编译](https://github.com/YaolinDong/infrabot-firmware/blob/main/docs/build.md) · [烧录](https://github.com/YaolinDong/infrabot-firmware/blob/main/docs/flashing.md) |
 | 用 C++ 或 Python 控制机械臂 | [infrabot-sdk](https://github.com/YaolinDong/infrabot-sdk) · [API](https://github.com/YaolinDong/infrabot-sdk/blob/main/docs/api.md) · [示例](https://github.com/YaolinDong/infrabot-sdk/tree/main/examples) |
 | 查看哪些版本可以一起使用 | [VERSIONS.md](VERSIONS.md) |
@@ -85,11 +86,12 @@
 |---|---|---|---|---|
 | [infrabot-description](https://github.com/YaolinDong/infrabot-description) | H7C 的 URDF、网格和辨识得到的惯量与摩擦参数，ROS 2 Jazzy 功能包。 | 已发布 | 0.1.0 | Apache-2.0 |
 | [infrabot-pcb-4p3](https://github.com/YaolinDong/infrabot-pcb-4p3) | STM32H743 核心板和 4.3 寸屏的四层底板：嘉立创 EDA 工程、原理图、Gerber、BOM 和坐标文件。 | 已发布 | R8 | CERN-OHL-P-2.0 · MIT · CC-BY-4.0 |
+| [infrabot-enclosure-4p3](https://github.com/YaolinDong/infrabot-enclosure-4p3) | 4.3 寸控制器的 3D 打印外壳：简单版 S8 为上下壳两件，精装版 C3 带键帽和导光柱。提供 STL 和 STEP。 | 已发布 | S8 · C3 | CERN-OHL-P-2.0 · MIT · CC-BY-4.0 |
 | [infrabot-firmware](https://github.com/YaolinDong/infrabot-firmware) | STM32H743 固件：1 kHz 关节控制、重力补偿、阻抗与导纳、触摸屏界面、签名 A/B 升级。 | 已发布 | 0.1.0 | Apache-2.0 |
 | [infrabot-sdk](https://github.com/YaolinDong/infrabot-sdk) | 基于以太网的 Linux C++17 / Python SDK、Qt 控制界面和固件升级工具。 | 已发布 | 0.1.0 | Apache-2.0 |
 | `infrabot-ros2` | ROS 2 驱动。 | 计划中 | — | — |
 | `lerobot-robot-infrabot` | LeRobot 机器人插件，用于遥操作、数据采集和策略部署。 | 计划中 | — | — |
-| `infrabot-hardware` | 机械 CAD、物料清单和装配说明。 | 计划中 | — | — |
+| `infrabot-hardware` | 机械臂的机械 CAD、物料清单和装配说明。 | 计划中 | — | — |
 <!-- repos:end -->
 
 ## 整体结构
@@ -122,7 +124,7 @@ PC：C++ / Python SDK、Qt 界面
 
 ## 许可证
 
-每个仓库各自声明许可证。软件、固件和机器人描述使用 Apache-2.0；控制底板的设计文件使用 CERN-OHL-P-2.0，工具使用 MIT，文档和图片使用 CC-BY-4.0。第三方组件保留各自的许可证，详见各仓库的说明。
+每个仓库各自声明许可证。软件、固件和机器人描述使用 Apache-2.0；控制底板和外壳的设计文件使用 CERN-OHL-P-2.0，工具使用 MIT，文档和图片使用 CC-BY-4.0。第三方组件保留各自的许可证，详见各仓库的说明。
 
 本仓库（包括网站、文档和图片）使用 [Apache-2.0](LICENSE) 许可证。底板渲染图 `website/static/img/pcb-4p3.png` 来自 [infrabot-pcb-4p3](https://github.com/YaolinDong/infrabot-pcb-4p3)，仍按 CC-BY-4.0 许可。
 
