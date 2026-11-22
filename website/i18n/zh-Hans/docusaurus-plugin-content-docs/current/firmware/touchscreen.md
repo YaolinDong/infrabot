@@ -7,10 +7,58 @@ title: 触摸屏
 
 控制器支持野火 4.3 寸 480×272 和 5 寸 800×480 RGB 电容屏，开机时自动识别接的是哪一块。
 
-<div className="screens">
-  <img src={require('@site/static/img/lcd-menu-zh.png').default} alt="主菜单" />
-  <img src={require('@site/static/img/lcd-gravity-zh.png').default} alt="重力补偿页面" />
+<div className="lcd-gallery">
+  <figure>
+    <img src={require('@site/static/img/lcd/zh/menu.png').default} alt="主菜单" />
+    <figcaption>主菜单</figcaption>
+  </figure>
+  <figure>
+    <img src={require('@site/static/img/lcd/zh/arm.png').default} alt="机械臂与关节" />
+    <figcaption>机械臂与关节</figcaption>
+  </figure>
+  <figure>
+    <img src={require('@site/static/img/lcd/zh/3d-view.png').default} alt="三维视图" />
+    <figcaption>三维视图</figcaption>
+  </figure>
+  <figure>
+    <img src={require('@site/static/img/lcd/zh/gravity.png').default} alt="重力补偿" />
+    <figcaption>重力补偿</figcaption>
+  </figure>
+  <figure>
+    <img src={require('@site/static/img/lcd/zh/joint-impedance.png').default} alt="关节阻抗" />
+    <figcaption>关节阻抗</figcaption>
+  </figure>
+  <figure>
+    <img src={require('@site/static/img/lcd/zh/cartesian-impedance.png').default} alt="笛卡尔阻抗" />
+    <figcaption>笛卡尔阻抗</figcaption>
+  </figure>
+  <figure>
+    <img src={require('@site/static/img/lcd/zh/joint-admittance.png').default} alt="关节导纳" />
+    <figcaption>关节导纳</figcaption>
+  </figure>
+  <figure>
+    <img src={require('@site/static/img/lcd/zh/cartesian-admittance.png').default} alt="笛卡尔导纳" />
+    <figcaption>笛卡尔导纳</figcaption>
+  </figure>
+  <figure>
+    <img src={require('@site/static/img/lcd/zh/network.png').default} alt="网络设置" />
+    <figcaption>网络设置</figcaption>
+  </figure>
+  <figure>
+    <img src={require('@site/static/img/lcd/zh/diagnostics.png').default} alt="诊断" />
+    <figcaption>诊断</figcaption>
+  </figure>
+  <figure>
+    <img src={require('@site/static/img/lcd/zh/language.png').default} alt="显示语言" />
+    <figcaption>显示语言</figcaption>
+  </figure>
+  <figure>
+    <img src={require('@site/static/img/lcd/zh/motors.png').default} alt="电机参数" />
+    <figcaption>电机参数</figcaption>
+  </figure>
 </div>
+
+截图由固件的主机测试生成，运行的是控制器上的界面代码，关节数据为模拟数据。三维视图由控制器自己的渲染程序绘制。
 
 ## 4.3 寸界面
 

@@ -30,23 +30,42 @@
 
 <table align="center">
   <tr>
-    <td align="center"><a href="website/static/video/gravity-compensation.mp4"><img src="website/static/img/demo/gravity-compensation.webp" width="260" alt="重力补偿"></a><br><sub>重力补偿</sub></td>
-    <td align="center"><a href="website/static/video/joint-impedance.mp4"><img src="website/static/img/demo/joint-impedance.webp" width="260" alt="关节阻抗"></a><br><sub>关节阻抗</sub></td>
-    <td align="center"><a href="website/static/video/cartesian-impedance.mp4"><img src="website/static/img/demo/cartesian-impedance.webp" width="260" alt="笛卡尔阻抗"></a><br><sub>笛卡尔阻抗</sub></td>
+    <td align="center"><a href="website/static/video/gravity-compensation.mp4"><img src="website/static/img/demo/gravity-compensation.webp" width="240" alt="重力补偿"></a><br><sub>重力补偿</sub></td>
+    <td align="center"><a href="website/static/video/joint-impedance.mp4"><img src="website/static/img/demo/joint-impedance.webp" width="240" alt="关节阻抗"></a><br><sub>关节阻抗</sub></td>
+    <td align="center"><a href="website/static/video/cartesian-impedance.mp4"><img src="website/static/img/demo/cartesian-impedance.webp" width="240" alt="笛卡尔阻抗"></a><br><sub>笛卡尔阻抗</sub></td>
   </tr>
   <tr>
-    <td align="center"><a href="website/static/video/joint-admittance.mp4"><img src="website/static/img/demo/joint-admittance.webp" width="260" alt="关节导纳"></a><br><sub>关节导纳</sub></td>
-    <td align="center"><a href="website/static/video/cartesian-admittance.mp4"><img src="website/static/img/demo/cartesian-admittance.webp" width="260" alt="笛卡尔导纳"></a><br><sub>笛卡尔导纳</sub></td>
+    <td align="center"><a href="website/static/video/joint-admittance.mp4"><img src="website/static/img/demo/joint-admittance.webp" width="240" alt="关节导纳"></a><br><sub>关节导纳</sub></td>
+    <td align="center"><a href="website/static/video/cartesian-admittance.mp4"><img src="website/static/img/demo/cartesian-admittance.webp" width="240" alt="笛卡尔导纳"></a><br><sub>笛卡尔导纳</sub></td>
   </tr>
 </table>
 <p align="center"><sub>每种模式都在控制器上以 1 kHz 运行，不需要 PC 持续发指令。点击动图查看完整视频。</sub></p>
 
 ## 触摸屏
 
-<p align="center">
-  <img src="website/static/img/lcd-menu-zh.png" width="360" alt="中文界面的控制器触摸屏主菜单">
-  <img src="website/static/img/lcd-gravity-zh.png" width="360" alt="重力补偿页面和各关节力矩">
-</p>
+<table align="center">
+  <tr>
+    <td align="center"><img src="website/static/img/lcd/zh/menu.png" width="240" alt="主菜单"><br><sub>主菜单</sub></td>
+    <td align="center"><img src="website/static/img/lcd/zh/arm.png" width="240" alt="机械臂与关节"><br><sub>机械臂与关节</sub></td>
+    <td align="center"><img src="website/static/img/lcd/zh/3d-view.png" width="240" alt="三维视图"><br><sub>三维视图</sub></td>
+  </tr>
+  <tr>
+    <td align="center"><img src="website/static/img/lcd/zh/gravity.png" width="240" alt="重力补偿"><br><sub>重力补偿</sub></td>
+    <td align="center"><img src="website/static/img/lcd/zh/joint-impedance.png" width="240" alt="关节阻抗"><br><sub>关节阻抗</sub></td>
+    <td align="center"><img src="website/static/img/lcd/zh/cartesian-impedance.png" width="240" alt="笛卡尔阻抗"><br><sub>笛卡尔阻抗</sub></td>
+  </tr>
+  <tr>
+    <td align="center"><img src="website/static/img/lcd/zh/joint-admittance.png" width="240" alt="关节导纳"><br><sub>关节导纳</sub></td>
+    <td align="center"><img src="website/static/img/lcd/zh/cartesian-admittance.png" width="240" alt="笛卡尔导纳"><br><sub>笛卡尔导纳</sub></td>
+    <td align="center"><img src="website/static/img/lcd/zh/network.png" width="240" alt="网络设置"><br><sub>网络设置</sub></td>
+  </tr>
+  <tr>
+    <td align="center"><img src="website/static/img/lcd/zh/diagnostics.png" width="240" alt="诊断"><br><sub>诊断</sub></td>
+    <td align="center"><img src="website/static/img/lcd/zh/language.png" width="240" alt="显示语言"><br><sub>显示语言</sub></td>
+    <td align="center"><img src="website/static/img/lcd/zh/motors.png" width="240" alt="电机参数"><br><sub>电机参数</sub></td>
+  </tr>
+</table>
+<p align="center"><sub>4.3 寸屏的全部页面，也可以切换为英文。每一页右上角都有停止按钮。截图由固件的主机测试生成，运行的是控制器上的界面代码，关节数据为模拟数据。点击图片查看原尺寸。</sub></p>
 
 ## 从这里开始
 

@@ -30,23 +30,42 @@ English · [简体中文](README.zh-CN.md)
 
 <table align="center">
   <tr>
-    <td align="center"><a href="website/static/video/gravity-compensation.mp4"><img src="website/static/img/demo/gravity-compensation.webp" width="260" alt="Gravity compensation"></a><br><sub>Gravity compensation</sub></td>
-    <td align="center"><a href="website/static/video/joint-impedance.mp4"><img src="website/static/img/demo/joint-impedance.webp" width="260" alt="Joint impedance"></a><br><sub>Joint impedance</sub></td>
-    <td align="center"><a href="website/static/video/cartesian-impedance.mp4"><img src="website/static/img/demo/cartesian-impedance.webp" width="260" alt="Cartesian impedance"></a><br><sub>Cartesian impedance</sub></td>
+    <td align="center"><a href="website/static/video/gravity-compensation.mp4"><img src="website/static/img/demo/gravity-compensation.webp" width="240" alt="Gravity compensation"></a><br><sub>Gravity compensation</sub></td>
+    <td align="center"><a href="website/static/video/joint-impedance.mp4"><img src="website/static/img/demo/joint-impedance.webp" width="240" alt="Joint impedance"></a><br><sub>Joint impedance</sub></td>
+    <td align="center"><a href="website/static/video/cartesian-impedance.mp4"><img src="website/static/img/demo/cartesian-impedance.webp" width="240" alt="Cartesian impedance"></a><br><sub>Cartesian impedance</sub></td>
   </tr>
   <tr>
-    <td align="center"><a href="website/static/video/joint-admittance.mp4"><img src="website/static/img/demo/joint-admittance.webp" width="260" alt="Joint admittance"></a><br><sub>Joint admittance</sub></td>
-    <td align="center"><a href="website/static/video/cartesian-admittance.mp4"><img src="website/static/img/demo/cartesian-admittance.webp" width="260" alt="Cartesian admittance"></a><br><sub>Cartesian admittance</sub></td>
+    <td align="center"><a href="website/static/video/joint-admittance.mp4"><img src="website/static/img/demo/joint-admittance.webp" width="240" alt="Joint admittance"></a><br><sub>Joint admittance</sub></td>
+    <td align="center"><a href="website/static/video/cartesian-admittance.mp4"><img src="website/static/img/demo/cartesian-admittance.webp" width="240" alt="Cartesian admittance"></a><br><sub>Cartesian admittance</sub></td>
   </tr>
 </table>
 <p align="center"><sub>Each mode runs at 1 kHz on the controller, without a PC command stream. Click a clip for the full video.</sub></p>
 
 ## Touchscreen
 
-<p align="center">
-  <img src="website/static/img/lcd-menu-en.png" width="360" alt="Controller touchscreen main menu in English">
-  <img src="website/static/img/lcd-gravity-en.png" width="360" alt="Gravity compensation page with joint torques">
-</p>
+<table align="center">
+  <tr>
+    <td align="center"><img src="website/static/img/lcd/en/menu.png" width="240" alt="Main menu"><br><sub>Main menu</sub></td>
+    <td align="center"><img src="website/static/img/lcd/en/arm.png" width="240" alt="Arm and joints"><br><sub>Arm and joints</sub></td>
+    <td align="center"><img src="website/static/img/lcd/en/3d-view.png" width="240" alt="3D view"><br><sub>3D view</sub></td>
+  </tr>
+  <tr>
+    <td align="center"><img src="website/static/img/lcd/en/gravity.png" width="240" alt="Gravity compensation"><br><sub>Gravity compensation</sub></td>
+    <td align="center"><img src="website/static/img/lcd/en/joint-impedance.png" width="240" alt="Joint impedance"><br><sub>Joint impedance</sub></td>
+    <td align="center"><img src="website/static/img/lcd/en/cartesian-impedance.png" width="240" alt="Cartesian impedance"><br><sub>Cartesian impedance</sub></td>
+  </tr>
+  <tr>
+    <td align="center"><img src="website/static/img/lcd/en/joint-admittance.png" width="240" alt="Joint admittance"><br><sub>Joint admittance</sub></td>
+    <td align="center"><img src="website/static/img/lcd/en/cartesian-admittance.png" width="240" alt="Cartesian admittance"><br><sub>Cartesian admittance</sub></td>
+    <td align="center"><img src="website/static/img/lcd/en/network.png" width="240" alt="Network settings"><br><sub>Network settings</sub></td>
+  </tr>
+  <tr>
+    <td align="center"><img src="website/static/img/lcd/en/diagnostics.png" width="240" alt="Diagnostics"><br><sub>Diagnostics</sub></td>
+    <td align="center"><img src="website/static/img/lcd/en/language.png" width="240" alt="Display language"><br><sub>Display language</sub></td>
+    <td align="center"><img src="website/static/img/lcd/en/motors.png" width="240" alt="Motor table"><br><sub>Motor table</sub></td>
+  </tr>
+</table>
+<p align="center"><sub>Every page of the 4.3-inch interface, also available in Simplified Chinese. STOP stays in the top-right corner of every page. The screenshots come from the firmware host tests, which run the controller's UI code with simulated joint data. Click an image for full size.</sub></p>
 
 ## Start here
 

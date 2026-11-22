@@ -7,10 +7,58 @@ title: Touchscreen
 
 The controller supports the Fire 4.3-inch 480×272 and 5-inch 800×480 RGB capacitive panels and detects which is connected at start-up.
 
-<div className="screens">
-  <img src={require('@site/static/img/lcd-menu-en.png').default} alt="Main menu" />
-  <img src={require('@site/static/img/lcd-gravity-en.png').default} alt="Gravity compensation page" />
+<div className="lcd-gallery">
+  <figure>
+    <img src={require('@site/static/img/lcd/en/menu.png').default} alt="Main menu" />
+    <figcaption>Main menu</figcaption>
+  </figure>
+  <figure>
+    <img src={require('@site/static/img/lcd/en/arm.png').default} alt="Arm and joints" />
+    <figcaption>Arm and joints</figcaption>
+  </figure>
+  <figure>
+    <img src={require('@site/static/img/lcd/en/3d-view.png').default} alt="3D view" />
+    <figcaption>3D view</figcaption>
+  </figure>
+  <figure>
+    <img src={require('@site/static/img/lcd/en/gravity.png').default} alt="Gravity compensation" />
+    <figcaption>Gravity compensation</figcaption>
+  </figure>
+  <figure>
+    <img src={require('@site/static/img/lcd/en/joint-impedance.png').default} alt="Joint impedance" />
+    <figcaption>Joint impedance</figcaption>
+  </figure>
+  <figure>
+    <img src={require('@site/static/img/lcd/en/cartesian-impedance.png').default} alt="Cartesian impedance" />
+    <figcaption>Cartesian impedance</figcaption>
+  </figure>
+  <figure>
+    <img src={require('@site/static/img/lcd/en/joint-admittance.png').default} alt="Joint admittance" />
+    <figcaption>Joint admittance</figcaption>
+  </figure>
+  <figure>
+    <img src={require('@site/static/img/lcd/en/cartesian-admittance.png').default} alt="Cartesian admittance" />
+    <figcaption>Cartesian admittance</figcaption>
+  </figure>
+  <figure>
+    <img src={require('@site/static/img/lcd/en/network.png').default} alt="Network settings" />
+    <figcaption>Network settings</figcaption>
+  </figure>
+  <figure>
+    <img src={require('@site/static/img/lcd/en/diagnostics.png').default} alt="Diagnostics" />
+    <figcaption>Diagnostics</figcaption>
+  </figure>
+  <figure>
+    <img src={require('@site/static/img/lcd/en/language.png').default} alt="Display language" />
+    <figcaption>Display language</figcaption>
+  </figure>
+  <figure>
+    <img src={require('@site/static/img/lcd/en/motors.png').default} alt="Motor table" />
+    <figcaption>Motor table</figcaption>
+  </figure>
 </div>
+
+The screenshots come from the firmware host tests, which run the controller's UI code with simulated joint data. The 3D view is drawn by the controller's own renderer.
 
 ## 4.3-inch layout
 

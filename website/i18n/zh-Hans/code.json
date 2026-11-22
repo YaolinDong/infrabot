@@ -65,6 +65,9 @@
   "home.screens.text": {
     "message": "触摸屏不需要 PC 就能使用：使能驱动器、切换模式、调节柔顺参数，并且每一页都能停止机械臂。界面支持英文和简体中文。"
   },
+  "home.screens.all": {
+    "message": "查看触摸屏的全部页面"
+  },
   "home.screen.menu": {
     "message": "触摸屏主菜单"
   },

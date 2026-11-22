@@ -128,6 +128,31 @@
   image-rendering: pixelated;
 }
 
+.lcd-gallery {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(220px, 1fr));
+  gap: 1rem;
+  margin-bottom: 1rem;
+}
+
+.lcd-gallery figure {
+  margin: 0;
+}
+
+.lcd-gallery img {
+  display: block;
+  width: 100%;
+  aspect-ratio: 480 / 272;
+  border-radius: 6px;
+}
+
+.lcd-gallery figcaption {
+  margin-top: 0.35rem;
+  font-size: 0.875rem;
+  text-align: center;
+  color: var(--ifm-color-emphasis-700);
+}
+
 .demos {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));

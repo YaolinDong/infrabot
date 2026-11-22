@@ -45,8 +45,8 @@ function PathCard({to, title, children}) {
 export default function Home() {
   const {i18n} = useDocusaurusContext();
   const zh = i18n.currentLocale === 'zh-Hans';
-  const menu = useBaseUrl(zh ? '/img/lcd-menu-zh.png' : '/img/lcd-menu-en.png');
-  const gravity = useBaseUrl(zh ? '/img/lcd-gravity-zh.png' : '/img/lcd-gravity-en.png');
+  const menu = useBaseUrl(`/img/lcd/${zh ? 'zh' : 'en'}/menu.png`);
+  const gravity = useBaseUrl(`/img/lcd/${zh ? 'zh' : 'en'}/gravity.png`);
   return (
     <Layout
       title={translate({id: 'home.title', message: 'Open-source seven-axis arm'})}
@@ -151,6 +151,11 @@ export default function Home() {
             <img src={menu} alt={translate({id: 'home.screen.menu', message: 'Touchscreen main menu'})} />
             <img src={gravity} alt={translate({id: 'home.screen.gravity', message: 'Gravity compensation page'})} />
           </div>
+          <p style={{textAlign: 'center', marginTop: '1rem'}}>
+            <Link to="/docs/firmware/touchscreen">
+              <Translate id="home.screens.all">See every page of the touchscreen</Translate>
+            </Link>
+          </p>
         </section>
         <section className="section" style={{paddingBottom: '3rem'}}>
           <div className="admonition admonition-warning alert alert--warning">
