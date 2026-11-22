@@ -7,10 +7,8 @@ English · [简体中文](README.zh-CN.md)
 [**Documentation**](https://yaolindong.github.io/infrabot/) · [Demo videos](https://yaolindong.github.io/infrabot/docs/demos) · [Quick start](#start-here) · [Repositories](#repositories) · [Compatibility](VERSIONS.md) · [Safety](SAFETY.md)
 
 <p align="center">
-  <img src="website/static/img/h7c-photo.jpg" height="250" alt="The InfraBot H7C seven-axis arm">
-  <img src="website/static/img/gravity-compensation.webp" height="250" alt="Guiding the arm by hand in gravity compensation">
+  <img src="website/static/img/h7c-photo.jpg" width="480" alt="The InfraBot H7C seven-axis arm">
 </p>
-<p align="center"><sub>Gravity compensation on the controller, guided by hand. More clips: <a href="website/static/video/gravity-compensation.mp4">gravity compensation</a> · <a href="website/static/video/joint-impedance.mp4">joint impedance</a> · <a href="website/static/video/cartesian-impedance.mp4">Cartesian impedance</a> · <a href="website/static/video/joint-admittance.mp4">joint admittance</a> · <a href="website/static/video/cartesian-admittance.mp4">Cartesian admittance</a></sub></p>
 
 | Joints | Actuators | Arm mass | Control loop | Joint bus | Host link |
 |:---:|:---:|:---:|:---:|:---:|:---:|
@@ -27,6 +25,25 @@ English · [简体中文](README.zh-CN.md)
 - **Signed A/B firmware updates.** Updates are installed over Ethernet with approval on the touchscreen. A failed trial boot reverts to the previous application. SWD recovery is also supported.
 - **Open hardware and models.** The carrier board ships with editable EasyEDA sources and Gerbers. The URDF includes identified inertia and friction.
 - **Supervised stopping.** Stream loss, stale feedback and drive faults bring the arm to a controlled stop in an enabled hold. A separately wired hardware emergency stop is still required. Read the [safety guide](SAFETY.md) first.
+
+## Demos
+
+<table align="center">
+  <tr>
+    <td align="center"><a href="website/static/video/gravity-compensation.mp4"><img src="website/static/img/demo/gravity-compensation.webp" width="260" alt="Gravity compensation"></a><br><sub>Gravity compensation</sub></td>
+    <td align="center"><a href="website/static/video/joint-impedance.mp4"><img src="website/static/img/demo/joint-impedance.webp" width="260" alt="Joint impedance"></a><br><sub>Joint impedance</sub></td>
+    <td align="center"><a href="website/static/video/cartesian-impedance.mp4"><img src="website/static/img/demo/cartesian-impedance.webp" width="260" alt="Cartesian impedance"></a><br><sub>Cartesian impedance</sub></td>
+  </tr>
+</table>
+<table align="center">
+  <tr>
+    <td align="center"><a href="website/static/video/joint-admittance.mp4"><img src="website/static/img/demo/joint-admittance.webp" width="260" alt="Joint admittance"></a><br><sub>Joint admittance</sub></td>
+    <td align="center"><a href="website/static/video/cartesian-admittance.mp4"><img src="website/static/img/demo/cartesian-admittance.webp" width="260" alt="Cartesian admittance"></a><br><sub>Cartesian admittance</sub></td>
+  </tr>
+</table>
+<p align="center"><sub>Each mode runs at 1 kHz on the controller, without a PC command stream. Click a clip for the full video.</sub></p>
+
+## Touchscreen
 
 <p align="center">
   <img src="website/static/img/lcd-menu-en.png" width="360" alt="Controller touchscreen main menu in English">

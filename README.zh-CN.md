@@ -7,10 +7,8 @@
 [**文档**](https://yaolindong.github.io/infrabot/zh-Hans/) · [演示视频](https://yaolindong.github.io/infrabot/zh-Hans/docs/demos) · [从这里开始](#从这里开始) · [仓库列表](#仓库列表) · [版本兼容](VERSIONS.md) · [安全说明](SAFETY.md)
 
 <p align="center">
-  <img src="website/static/img/h7c-photo.jpg" height="250" alt="InfraBot H7C 七轴机械臂实物">
-  <img src="website/static/img/gravity-compensation.webp" height="250" alt="重力补偿模式下用手拖动机械臂">
+  <img src="website/static/img/h7c-photo.jpg" width="480" alt="InfraBot H7C 七轴机械臂实物">
 </p>
-<p align="center"><sub>控制器上的重力补偿，用手拖动。更多视频：<a href="website/static/video/gravity-compensation.mp4">重力补偿</a> · <a href="website/static/video/joint-impedance.mp4">关节阻抗</a> · <a href="website/static/video/cartesian-impedance.mp4">笛卡尔阻抗</a> · <a href="website/static/video/joint-admittance.mp4">关节导纳</a> · <a href="website/static/video/cartesian-admittance.mp4">笛卡尔导纳</a></sub></p>
 
 | 关节 | 电机 | 本体质量 | 控制环 | 关节总线 | 上位机连接 |
 |:---:|:---:|:---:|:---:|:---:|:---:|
@@ -27,6 +25,25 @@
 - **签名 A/B 固件升级。** 通过以太网升级，需要在触摸屏上确认；试启动失败会回到原来的固件，也支持 SWD 恢复。
 - **开放的硬件和模型。** 控制底板提供可编辑的嘉立创 EDA 工程和 Gerber，URDF 带有辨识得到的惯量和摩擦参数。
 - **有监控的停止。** 指令断流、反馈过期、驱动器故障时，机械臂会受控停止，保持使能。仍然必须另外接一个独立接线的硬件急停。使用前请先读[安全说明](SAFETY.md)。
+
+## 演示
+
+<table align="center">
+  <tr>
+    <td align="center"><a href="website/static/video/gravity-compensation.mp4"><img src="website/static/img/demo/gravity-compensation.webp" width="260" alt="重力补偿"></a><br><sub>重力补偿</sub></td>
+    <td align="center"><a href="website/static/video/joint-impedance.mp4"><img src="website/static/img/demo/joint-impedance.webp" width="260" alt="关节阻抗"></a><br><sub>关节阻抗</sub></td>
+    <td align="center"><a href="website/static/video/cartesian-impedance.mp4"><img src="website/static/img/demo/cartesian-impedance.webp" width="260" alt="笛卡尔阻抗"></a><br><sub>笛卡尔阻抗</sub></td>
+  </tr>
+</table>
+<table align="center">
+  <tr>
+    <td align="center"><a href="website/static/video/joint-admittance.mp4"><img src="website/static/img/demo/joint-admittance.webp" width="260" alt="关节导纳"></a><br><sub>关节导纳</sub></td>
+    <td align="center"><a href="website/static/video/cartesian-admittance.mp4"><img src="website/static/img/demo/cartesian-admittance.webp" width="260" alt="笛卡尔导纳"></a><br><sub>笛卡尔导纳</sub></td>
+  </tr>
+</table>
+<p align="center"><sub>每种模式都在控制器上以 1 kHz 运行，不需要 PC 持续发指令。点击动图查看完整视频。</sub></p>
+
+## 触摸屏
 
 <p align="center">
   <img src="website/static/img/lcd-menu-zh.png" width="360" alt="中文界面的控制器触摸屏主菜单">
