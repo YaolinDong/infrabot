@@ -1,0 +1,61 @@
+{
+  "owner": "YaolinDong",
+  "repositories": [
+    {
+      "name": "infrabot-description",
+      "status": "available",
+      "version": "0.1.0",
+      "license": "Apache-2.0",
+      "en": "H7C URDF, meshes and identified inertia and friction. ROS 2 Jazzy package.",
+      "zh": "H7C 的 URDF、网格和辨识得到的惯量与摩擦参数，ROS 2 Jazzy 功能包。"
+    },
+    {
+      "name": "infrabot-pcb-4p3",
+      "status": "available",
+      "version": "R8",
+      "license": "CERN-OHL-P-2.0 · MIT · CC-BY-4.0",
+      "en": "Four-layer carrier board for the STM32H743 core module and 4.3-inch panel: EasyEDA project, schematics, Gerbers, BOM and CPL.",
+      "zh": "STM32H743 核心板和 4.3 寸屏的四层底板：嘉立创 EDA 工程、原理图、Gerber、BOM 和坐标文件。"
+    },
+    {
+      "name": "infrabot-firmware",
+      "status": "preparing",
+      "version": "0.1.0",
+      "license": "Apache-2.0",
+      "en": "STM32H743 firmware: 1 kHz joint control, gravity compensation, impedance and admittance, touchscreen UI, signed A/B updates.",
+      "zh": "STM32H743 固件：1 kHz 关节控制、重力补偿、阻抗与导纳、触摸屏界面、签名 A/B 升级。"
+    },
+    {
+      "name": "infrabot-sdk",
+      "status": "preparing",
+      "version": "0.1.0",
+      "license": "Apache-2.0",
+      "en": "Linux C++17 and Python SDK over Ethernet, Qt control GUI and firmware update tools.",
+      "zh": "基于以太网的 Linux C++17 / Python SDK、Qt 控制界面和固件升级工具。"
+    },
+    {
+      "name": "infrabot-ros2",
+      "status": "planned",
+      "version": "",
+      "license": "",
+      "en": "ROS 2 driver.",
+      "zh": "ROS 2 驱动。"
+    },
+    {
+      "name": "lerobot-robot-infrabot",
+      "status": "planned",
+      "version": "",
+      "license": "",
+      "en": "LeRobot robot plugin for teleoperation, recording and policy deployment.",
+      "zh": "LeRobot 机器人插件，用于遥操作、数据采集和策略部署。"
+    },
+    {
+      "name": "infrabot-hardware",
+      "status": "planned",
+      "version": "",
+      "license": "",
+      "en": "Mechanical CAD, bill of materials and assembly guide.",
+      "zh": "机械 CAD、物料清单和装配说明。"
+    }
+  ]
+}
