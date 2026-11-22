@@ -1,0 +1,46 @@
+{
+  "link.title.Docs": {
+    "message": "文档",
+    "description": "The title of the footer links column with title=Docs in the footer"
+  },
+  "link.title.Repositories": {
+    "message": "仓库",
+    "description": "The title of the footer links column with title=Repositories in the footer"
+  },
+  "link.title.Project": {
+    "message": "项目",
+    "description": "The title of the footer links column with title=Project in the footer"
+  },
+  "link.item.label.Overview": {
+    "message": "概览",
+    "description": "The label of footer link with label=Overview linking to /docs/overview"
+  },
+  "link.item.label.Safety": {
+    "message": "安全",
+    "description": "The label of footer link with label=Safety linking to /docs/safety"
+  },
+  "link.item.label.Compatibility": {
+    "message": "版本兼容",
+    "description": "The label of footer link with label=Compatibility linking to /docs/compatibility"
+  },
+  "link.item.label.infrabot-description": {
+    "message": "infrabot-description",
+    "description": "The label of footer link with label=infrabot-description linking to https://github.com/YaolinDong/infrabot-description"
+  },
+  "link.item.label.infrabot-pcb-4p3": {
+    "message": "infrabot-pcb-4p3",
+    "description": "The label of footer link with label=infrabot-pcb-4p3 linking to https://github.com/YaolinDong/infrabot-pcb-4p3"
+  },
+  "link.item.label.GitHub": {
+    "message": "GitHub",
+    "description": "The label of footer link with label=GitHub linking to https://github.com/YaolinDong/infrabot"
+  },
+  "link.item.label.Issues": {
+    "message": "问题反馈",
+    "description": "The label of footer link with label=Issues linking to https://github.com/YaolinDong/infrabot/issues"
+  },
+  "copyright": {
+    "message": "Copyright © 2026 YaolinDong（董耀琳）。文档使用 Apache-2.0 许可证。",
+    "description": "The footer copyright"
+  }
+}

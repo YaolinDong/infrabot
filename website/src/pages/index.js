@@ -1,0 +1,125 @@
+// SPDX-License-Identifier: Apache-2.0
+import Link from '@docusaurus/Link';
+import Translate, {translate} from '@docusaurus/Translate';
+import useBaseUrl from '@docusaurus/useBaseUrl';
+import useDocusaurusContext from '@docusaurus/useDocusaurusContext';
+import Heading from '@theme/Heading';
+import Layout from '@theme/Layout';
+
+const github = 'https://github.com/YaolinDong';
+
+function Stat({value, label}) {
+  return (
+    <div className="stat">
+      <strong>{value}</strong>
+      <span>{label}</span>
+    </div>
+  );
+}
+
+function PathCard({to, title, children}) {
+  return (
+    <Link className="path-card" to={to}>
+      <Heading as="h3">{title}</Heading>
+      <p>{children}</p>
+    </Link>
+  );
+}
+
+export default function Home() {
+  const {i18n} = useDocusaurusContext();
+  const zh = i18n.currentLocale === 'zh-Hans';
+  const menu = useBaseUrl(zh ? '/img/lcd-menu-zh.png' : '/img/lcd-menu-en.png');
+  const gravity = useBaseUrl(zh ? '/img/lcd-gravity-zh.png' : '/img/lcd-gravity-en.png');
+  return (
+    <Layout
+      title={translate({id: 'home.title', message: 'Open-source seven-axis arm'})}
+      description={translate({
+        id: 'home.description',
+        message: 'InfraBot H7C: Damiao CAN FD joints, STM32H743 controller with 1 kHz control, C++ and Python SDK.',
+      })}>
+      <header className="hero-infrabot">
+        <div className="hero-grid">
+          <div>
+            <Heading as="h1">InfraBot H7C</Heading>
+            <p className="hero__subtitle">
+              <Translate id="home.tagline">
+                An open-source seven-axis arm. The STM32H743 controller runs the 1 kHz joint loop, gravity
+                compensation, impedance and admittance on the arm. A PC connects over Ethernet.
+              </Translate>
+            </p>
+            <div className="hero-actions">
+              <Link className="button button--primary button--lg" to="/docs/get-started/choose-your-path">
+                <Translate id="home.start">Get started</Translate>
+              </Link>
+              <Link className="button button--secondary button--lg" to="/docs/safety">
+                <Translate id="home.safety">Safety guide</Translate>
+              </Link>
+              <Link className="button button--secondary button--lg" href={`${github}/infrabot`}>
+                GitHub
+              </Link>
+            </div>
+          </div>
+          <img
+            src={useBaseUrl('/img/h7c.png')}
+            alt={translate({id: 'home.render.alt', message: 'InfraBot H7C rendered at its zero configuration'})}
+          />
+        </div>
+        <div className="stats">
+          <Stat value={translate({id: 'home.stat.joints', message: '7 + gripper'})} label={translate({id: 'home.stat.joints.label', message: 'Joints'})} />
+          <Stat value="4.63 kg" label={translate({id: 'home.stat.mass.label', message: 'Arm mass, base included'})} />
+          <Stat value="1 kHz" label={translate({id: 'home.stat.loop.label', message: 'Control loop on the MCU'})} />
+          <Stat value="CAN FD" label={translate({id: 'home.stat.bus.label', message: '1 / 5 Mbit/s joint bus'})} />
+          <Stat value="C++ · Python" label={translate({id: 'home.stat.sdk.label', message: 'SDK over Ethernet UDP'})} />
+        </div>
+      </header>
+      <main>
+        <section className="section">
+          <Heading as="h2">
+            <Translate id="home.paths">Start here</Translate>
+          </Heading>
+          <div className="paths">
+            <PathCard to="/docs/get-started/view-the-model" title={translate({id: 'home.path.model', message: 'View the model'})}>
+              <Translate id="home.path.model.text">Load the H7C URDF in RViz or another tool. No hardware needed.</Translate>
+            </PathCard>
+            <PathCard to="/docs/hardware/controller-board" title={translate({id: 'home.path.board', message: 'Build the controller'})}>
+              <Translate id="home.path.board.text">Order the 4.3-inch carrier board from its Gerbers, BOM and CPL.</Translate>
+            </PathCard>
+            <PathCard to="/docs/firmware/control-modes" title={translate({id: 'home.path.firmware', message: 'Understand the firmware'})}>
+              <Translate id="home.path.firmware.text">Control modes, stopping behaviour, the touchscreen and signed updates.</Translate>
+            </PathCard>
+            <PathCard to="/docs/software/sdk" title={translate({id: 'home.path.sdk', message: 'Program the arm'})}>
+              <Translate id="home.path.sdk.text">Connect from C++ or Python, read state and stream commands.</Translate>
+            </PathCard>
+          </div>
+        </section>
+        <section className="section">
+          <Heading as="h2">
+            <Translate id="home.screens">On the controller</Translate>
+          </Heading>
+          <p>
+            <Translate id="home.screens.text">
+              The touchscreen works without a PC. It enables the drives, switches modes, tunes compliance and stops the
+              arm from any page. The interface is available in English and Simplified Chinese.
+            </Translate>
+          </p>
+          <div className="screens">
+            <img src={menu} alt={translate({id: 'home.screen.menu', message: 'Touchscreen main menu'})} />
+            <img src={gravity} alt={translate({id: 'home.screen.gravity', message: 'Gravity compensation page'})} />
+          </div>
+        </section>
+        <section className="section" style={{paddingBottom: '3rem'}}>
+          <div className="admonition admonition-warning alert alert--warning">
+            <Translate id="home.warning">
+              InfraBot is a research arm, not a certified industrial or collaborative robot. Its software stop does not
+              remove drive power. Wire an independent hardware emergency stop before the first power-up.
+            </Translate>{' '}
+            <Link to="/docs/safety">
+              <Translate id="home.warning.link">Read the safety guide.</Translate>
+            </Link>
+          </div>
+        </section>
+      </main>
+    </Layout>
+  );
+}

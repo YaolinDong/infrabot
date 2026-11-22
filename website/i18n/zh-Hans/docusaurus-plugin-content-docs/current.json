@@ -1,0 +1,22 @@
+{
+  "version.label": {
+    "message": "最新",
+    "description": "The label for version current"
+  },
+  "sidebar.docs.category.Get started": {
+    "message": "快速开始",
+    "description": "The label for category 'Get started' in sidebar 'docs'"
+  },
+  "sidebar.docs.category.Hardware": {
+    "message": "硬件",
+    "description": "The label for category 'Hardware' in sidebar 'docs'"
+  },
+  "sidebar.docs.category.Firmware": {
+    "message": "固件",
+    "description": "The label for category 'Firmware' in sidebar 'docs'"
+  },
+  "sidebar.docs.category.Software": {
+    "message": "软件",
+    "description": "The label for category 'Software' in sidebar 'docs'"
+  }
+}
