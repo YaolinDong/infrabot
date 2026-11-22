@@ -34,8 +34,6 @@
     <td align="center"><a href="website/static/video/joint-impedance.mp4"><img src="website/static/img/demo/joint-impedance.webp" width="260" alt="关节阻抗"></a><br><sub>关节阻抗</sub></td>
     <td align="center"><a href="website/static/video/cartesian-impedance.mp4"><img src="website/static/img/demo/cartesian-impedance.webp" width="260" alt="笛卡尔阻抗"></a><br><sub>笛卡尔阻抗</sub></td>
   </tr>
-</table>
-<table align="center">
   <tr>
     <td align="center"><a href="website/static/video/joint-admittance.mp4"><img src="website/static/img/demo/joint-admittance.webp" width="260" alt="关节导纳"></a><br><sub>关节导纳</sub></td>
     <td align="center"><a href="website/static/video/cartesian-admittance.mp4"><img src="website/static/img/demo/cartesian-admittance.webp" width="260" alt="笛卡尔导纳"></a><br><sub>笛卡尔导纳</sub></td>

@@ -34,8 +34,6 @@ English · [简体中文](README.zh-CN.md)
     <td align="center"><a href="website/static/video/joint-impedance.mp4"><img src="website/static/img/demo/joint-impedance.webp" width="260" alt="Joint impedance"></a><br><sub>Joint impedance</sub></td>
     <td align="center"><a href="website/static/video/cartesian-impedance.mp4"><img src="website/static/img/demo/cartesian-impedance.webp" width="260" alt="Cartesian impedance"></a><br><sub>Cartesian impedance</sub></td>
   </tr>
-</table>
-<table align="center">
   <tr>
     <td align="center"><a href="website/static/video/joint-admittance.mp4"><img src="website/static/img/demo/joint-admittance.webp" width="260" alt="Joint admittance"></a><br><sub>Joint admittance</sub></td>
     <td align="center"><a href="website/static/video/cartesian-admittance.mp4"><img src="website/static/img/demo/cartesian-admittance.webp" width="260" alt="Cartesian admittance"></a><br><sub>Cartesian admittance</sub></td>
