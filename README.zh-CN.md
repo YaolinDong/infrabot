@@ -122,6 +122,15 @@ PC：C++ / Python SDK、Qt 界面
 
 如果 InfraBot 对你的工作有帮助，可以按 [CITATION.cff](CITATION.cff) 引用。
 
+## 致谢
+
+特别感谢 [@crystal0-0](https://github.com/crystal0-0) 和 [@xensexyq](https://github.com/xensexyq) 对 InfraBot 项目的支持。
+
+<p>
+  <a href="https://github.com/crystal0-0"><img src="https://github.com/crystal0-0.png?size=128" width="64" height="64" alt="@crystal0-0"></a>
+  <a href="https://github.com/xensexyq"><img src="https://github.com/xensexyq.png?size=128" width="64" height="64" alt="@xensexyq"></a>
+</p>
+
 ## 许可证
 
 每个仓库各自声明许可证。软件、固件和机器人描述使用 Apache-2.0；控制底板和外壳的设计文件使用 CERN-OHL-P-2.0，工具使用 MIT，文档和图片使用 CC-BY-4.0。第三方组件保留各自的许可证，详见各仓库的说明。

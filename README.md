@@ -122,6 +122,15 @@ Open an issue in the repository the problem belongs to. Use this repository for 
 
 If InfraBot helps your work, you can cite it using [CITATION.cff](CITATION.cff).
 
+## Acknowledgments
+
+Special thanks to [@crystal0-0](https://github.com/crystal0-0) and [@xensexyq](https://github.com/xensexyq) for their support of InfraBot.
+
+<p>
+  <a href="https://github.com/crystal0-0"><img src="https://github.com/crystal0-0.png?size=128" width="64" height="64" alt="@crystal0-0"></a>
+  <a href="https://github.com/xensexyq"><img src="https://github.com/xensexyq.png?size=128" width="64" height="64" alt="@xensexyq"></a>
+</p>
+
 ## License
 
 Each repository states its own license. Software, firmware and the robot description use Apache-2.0. The carrier board and enclosure designs use CERN-OHL-P-2.0, their tools use MIT, and their documentation and images use CC-BY-4.0. Third-party components keep their original licenses. Each repository lists them in its own notices.
