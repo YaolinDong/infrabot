@@ -9,12 +9,13 @@ title: Roadmap
 | Robot description, URDF and ROS 2 package | Published |
 | 4.3-inch carrier board R8 | Published |
 | 3D-printed enclosures S8 and C3 for the 4.3-inch controller | Published |
-| Firmware source (0.1.0) | Published |
-| C++ and Python SDK source (0.1.0) | Published |
-| Signed firmware release packages and version tags | Planned |
+| Arm mechanical CAD and BOM (`infrabot-hardware` 0.1.0) | Published |
+| Firmware source (0.1.1) | Published |
+| C++ and Python SDK source (0.1.2) | Published |
+| Signed firmware release packages and version tags | Published |
 | ROS 2 driver (`infrabot-ros2`) | Planned |
 | LeRobot plugin (`lerobot-robot-infrabot`) | Planned |
-| Arm mechanical CAD, BOM and assembly guide (`infrabot-hardware`) | Planned |
+| Arm assembly guide | Planned |
 | Measured reach, payload and repeatability | Planned |
 
 Dates are not promised. The project is maintained by one person.

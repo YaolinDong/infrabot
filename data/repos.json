@@ -26,9 +26,17 @@
       "zh": "4.3 寸控制器的 3D 打印外壳：简单版 S8 为上下壳两件，精装版 C3 带键帽和导光柱。提供 STL 和 STEP。"
     },
     {
-      "name": "infrabot-firmware",
+      "name": "infrabot-hardware",
       "status": "available",
       "version": "0.1.0",
+      "license": "CERN-OHL-S-2.0 · MIT · CC-BY-4.0",
+      "en": "H7C arm mechanical CAD: assembly STEP with the joint motors, STEP files for the 43 machined parts, and a BOM with part previews.",
+      "zh": "H7C 机械臂的机械图纸：含关节电机的整机 STEP、43 种机加工零件的 STEP，以及带零件预览的物料清单。"
+    },
+    {
+      "name": "infrabot-firmware",
+      "status": "available",
+      "version": "0.1.1",
       "license": "Apache-2.0",
       "en": "STM32H743 firmware: 1 kHz joint control, gravity compensation, impedance and admittance, touchscreen UI, signed A/B updates.",
       "zh": "STM32H743 固件：1 kHz 关节控制、重力补偿、阻抗与导纳、触摸屏界面、签名 A/B 升级。"
@@ -36,7 +44,7 @@
     {
       "name": "infrabot-sdk",
       "status": "available",
-      "version": "0.1.0",
+      "version": "0.1.2",
       "license": "Apache-2.0",
       "en": "Linux C++17 and Python SDK over Ethernet, Qt control GUI and firmware update tools.",
       "zh": "基于以太网的 Linux C++17 / Python SDK、Qt 控制界面和固件升级工具。"
@@ -56,14 +64,6 @@
       "license": "",
       "en": "LeRobot robot plugin for teleoperation, recording and policy deployment.",
       "zh": "LeRobot 机器人插件，用于遥操作、数据采集和策略部署。"
-    },
-    {
-      "name": "infrabot-hardware",
-      "status": "planned",
-      "version": "",
-      "license": "",
-      "en": "Arm mechanical CAD, bill of materials and assembly guide.",
-      "zh": "机械臂的机械 CAD、物料清单和装配说明。"
     }
   ]
 }

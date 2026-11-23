@@ -3,6 +3,9 @@ contact_links:
   - name: Robot description (URDF, meshes, ROS 2 package)
     url: https://github.com/YaolinDong/infrabot-description/issues
     about: Problems with the model or its tools.
+  - name: Arm mechanical CAD
+    url: https://github.com/YaolinDong/infrabot-hardware/issues
+    about: Machined parts, STEP files and the BOM.
   - name: Controller board
     url: https://github.com/YaolinDong/infrabot-pcb-4p3/issues
     about: Schematics, PCB, BOM and assembly.

@@ -14,5 +14,5 @@ title: 选择入口
 | 编程控制机械臂 | [SDK](../software/sdk.md) · [infrabot-sdk](https://github.com/YaolinDong/infrabot-sdk) | 装好的机械臂和控制器 |
 
 :::info 固件发布包
-签名的固件发布包还没有提供。请按固件仓库的说明从源码编译，新板子先通过 SWD 烧录。
+签名的固件包附在固件仓库的 Release 中，SDK 的 `flash-net` 和 `flash-swd` 加 `--download` 可以直接下载。新板子仍需先按固件仓库的说明通过 SWD 烧录。
 :::

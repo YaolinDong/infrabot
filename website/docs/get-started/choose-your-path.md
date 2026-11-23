@@ -14,5 +14,5 @@ title: Choose your path
 | Program the arm | [SDK](../software/sdk.md) · [infrabot-sdk](https://github.com/YaolinDong/infrabot-sdk) | Assembled arm and controller |
 
 :::info Firmware packages
-Signed firmware release packages are not published yet. Build the firmware from source and provision a new board over SWD, as described in the firmware repository.
+Signed firmware packages are attached to the firmware releases, and the SDK's `flash-net` and `flash-swd` can download them with `--download`. A new board is still provisioned over SWD first, as described in the firmware repository.
 :::

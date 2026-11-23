@@ -48,4 +48,4 @@ finally:
 
 ## 兼容性
 
-SDK 0.1.0 使用协议 1.0，见[版本兼容](../compatibility.md)。
+SDK 0.1.2 使用协议 1.0，见[版本兼容](../compatibility.md)。
