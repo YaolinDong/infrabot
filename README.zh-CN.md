@@ -92,7 +92,7 @@
 | [infrabot-pcb-4p3](https://github.com/YaolinDong/infrabot-pcb-4p3) | STM32H743 核心板和 4.3 寸屏的四层底板：嘉立创 EDA 工程、原理图、Gerber、BOM 和坐标文件。 | 已发布 | R8 | CERN-OHL-P-2.0 · MIT · CC-BY-4.0 |
 | [infrabot-firmware](https://github.com/YaolinDong/infrabot-firmware) | STM32H743 固件：1 kHz 关节控制、重力补偿、阻抗与导纳、触摸屏界面、签名 A/B 升级。 | 已发布 | 0.1.1 | Apache-2.0 |
 | [infrabot-sdk](https://github.com/YaolinDong/infrabot-sdk) | 基于以太网的 Linux C++17 / Python SDK、Qt 控制界面和固件升级工具。 | 已发布 | 0.1.3 | Apache-2.0 |
-| [infrabot-ros2](https://github.com/YaolinDong/infrabot-ros2) | ROS 2 Jazzy 的 ros2_control 驱动，控制 J1–J7：1 kHz 控制循环、关节轨迹控制器和 mock 硬件。 | 已发布 | 0.1.1 | Apache-2.0 |
+| [infrabot-ros2](https://github.com/YaolinDong/infrabot-ros2) | ROS 2 Jazzy 的 ros2_control 驱动，控制 J1–J7：1 kHz 控制循环、关节轨迹控制器和 mock 硬件。 | 已发布 | 0.1.2 | Apache-2.0 |
 | `lerobot-robot-infrabot` | LeRobot 机器人插件，用于遥操作、数据采集和策略部署。 | 计划中 | — | — |
 <!-- repos:end -->
 
