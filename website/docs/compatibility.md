@@ -9,6 +9,7 @@ Each repository is versioned on its own. The table lists versions tested togethe
 
 | Date | Arm | Firmware | SDK | Protocol | Description | Controller |
 |---|---|---|---|---|---|---|
+| 2026-11-24 | H7C | 0.1.1 | 0.1.2 | 1.0 | 0.1.0 | Fire H743 Challenger V2 core module; 4.3-inch carrier board R8; optional enclosure S8 or C3 |
 | 2026-11-23 | H7C | 0.1.0 | 0.1.0 | 1.0 | 0.1.0 | Fire H743 Challenger V2 core module; 4.3-inch carrier board R8; optional enclosure S8 or C3 |
 
 ## Protocol
