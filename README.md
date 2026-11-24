@@ -41,6 +41,27 @@ English · [简体中文](README.zh-CN.md)
 </table>
 <p align="center"><sub>Each mode runs at 1 kHz on the controller, without a PC command stream. Click a clip for the full video.</sub></p>
 
+### On-screen 3D view
+
+The touchscreen's 3D view is drawn by the controller from the measured joint angles, together with the tool position. It follows the arm while the arm is moved by hand.
+
+<table align="center">
+  <tr>
+    <td align="center"><a href="website/static/video/gravity-compensation-screen.mp4"><img src="website/static/img/demo/gravity-compensation-screen.webp" width="240" alt="Gravity compensation"></a><br><sub>Gravity compensation</sub></td>
+    <td align="center"><a href="website/static/video/joint-impedance-screen.mp4"><img src="website/static/img/demo/joint-impedance-screen.webp" width="240" alt="Joint impedance"></a><br><sub>Joint impedance</sub></td>
+  </tr>
+</table>
+
+### Touchscreen tour
+
+A walk through the pages on the running arm: arm and joints, 3D view, gravity compensation, the main menu, and the Cartesian impedance and admittance parameters. Every page is shown in the [touchscreen](#touchscreen) section below.
+
+<table align="center">
+  <tr>
+    <td align="center"><a href="website/static/video/touchscreen-tour.mp4"><img src="website/static/img/demo/touchscreen-tour.webp" width="400" alt="Touchscreen tour (37 s)"></a><br><sub>Touchscreen tour (37 s)</sub></td>
+  </tr>
+</table>
+
 ## Touchscreen
 
 <table align="center">

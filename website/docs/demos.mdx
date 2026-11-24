@@ -18,7 +18,7 @@ export function Clip({name, children}) {
 
 # Demos
 
-Each clip shows a local mode on the controller. The modes run at 1 kHz on the STM32H743 and need no PC command stream; the arm is pushed and guided by hand. The clips are muted and shortened to about 13–23 seconds. See [control modes](firmware/control-modes.md) for how each mode works.
+Each clip shows a local mode on the controller. The modes run at 1 kHz on the STM32H743 and need no PC command stream; the arm is pushed and guided by hand. The clips are muted. The mode clips are about 13–23 seconds and the touchscreen tour is 37 seconds. See [control modes](firmware/control-modes.md) for how each mode works.
 
 <div className="demos">
 
@@ -31,5 +31,27 @@ Each clip shows a local mode on the controller. The modes run at 1 kHz on the ST
 <Clip name="joint-admittance">**Joint admittance.** Estimated external torque drives a virtual mass per joint, so the joints follow a push.</Clip>
 
 <Clip name="cartesian-admittance">**Cartesian admittance.** The tool follows a push as a virtual mass in Cartesian space.</Clip>
+
+</div>
+
+## On-screen 3D view
+
+The touchscreen's 3D view is drawn by the controller from the measured joint angles, together with the tool position. It follows the arm while the arm is moved by hand.
+
+<div className="demos">
+
+<Clip name="gravity-compensation-screen">**Gravity compensation.** The arm is guided by hand and the view follows it.</Clip>
+
+<Clip name="joint-impedance-screen">**Joint impedance.** The arm is pushed away and springs back, on the arm and on the screen.</Clip>
+
+</div>
+
+## Touchscreen tour
+
+A walk through the pages on the running arm: arm and joints, 3D view, gravity compensation, the main menu, and the Cartesian impedance and admittance parameters. See [touchscreen](firmware/touchscreen.md) for every page.
+
+<div className="demos">
+
+<Clip name="touchscreen-tour">**Touchscreen tour (37 s).**</Clip>
 
 </div>

@@ -18,7 +18,7 @@ export function Clip({name, children}) {
 
 # 演示视频
 
-每段视频展示控制器上的一种本地模式。这些模式在 STM32H743 上以 1 kHz 运行，不需要 PC 持续发指令；视频里都是用手推动和拖动机械臂。视频已去掉声音，每段约 13–23 秒。各模式的原理见[控制模式](firmware/control-modes.md)。
+每段视频展示控制器上的一种本地模式。这些模式在 STM32H743 上以 1 kHz 运行，不需要 PC 持续发指令；视频里都是用手推动和拖动机械臂。视频已去掉声音。模式演示每段约 13–23 秒，触摸屏操作视频 37 秒。各模式的原理见[控制模式](firmware/control-modes.md)。
 
 <div className="demos">
 
@@ -31,5 +31,27 @@ export function Clip({name, children}) {
 <Clip name="joint-admittance">**关节导纳。** 估计的外力矩驱动每个关节的虚拟质量，关节会顺着推力运动。</Clip>
 
 <Clip name="cartesian-admittance">**笛卡尔导纳。** 末端在笛卡尔空间里作为虚拟质量，顺着推力运动。</Clip>
+
+</div>
+
+## 屏幕 3D 视图
+
+触摸屏上的 3D 视图由控制器根据实测关节角绘制，同时显示末端位置。用手移动机械臂时，画面跟着同步运动。
+
+<div className="demos">
+
+<Clip name="gravity-compensation-screen">**重力补偿。** 用手拖动机械臂，屏幕视图跟着运动。</Clip>
+
+<Clip name="joint-impedance-screen">**关节阻抗。** 推开机械臂后它弹回原位，屏幕上同步显示。</Clip>
+
+</div>
+
+## 触摸屏操作
+
+在运行中的机械臂上逐页操作：机械臂与关节、3D 视图、重力补偿、主菜单，以及笛卡尔阻抗和导纳的参数页。全部页面见[触摸屏](firmware/touchscreen.md)。
+
+<div className="demos">
+
+<Clip name="touchscreen-tour">**触摸屏操作（37 秒）。**</Clip>
 
 </div>

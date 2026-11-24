@@ -41,6 +41,27 @@
 </table>
 <p align="center"><sub>每种模式都在控制器上以 1 kHz 运行，不需要 PC 持续发指令。点击动图查看完整视频。</sub></p>
 
+### 屏幕 3D 视图
+
+触摸屏上的 3D 视图由控制器根据实测关节角绘制，同时显示末端位置。用手移动机械臂时，画面跟着同步运动。
+
+<table align="center">
+  <tr>
+    <td align="center"><a href="website/static/video/gravity-compensation-screen.mp4"><img src="website/static/img/demo/gravity-compensation-screen.webp" width="240" alt="重力补偿"></a><br><sub>重力补偿</sub></td>
+    <td align="center"><a href="website/static/video/joint-impedance-screen.mp4"><img src="website/static/img/demo/joint-impedance-screen.webp" width="240" alt="关节阻抗"></a><br><sub>关节阻抗</sub></td>
+  </tr>
+</table>
+
+### 触摸屏操作
+
+在运行中的机械臂上逐页操作：机械臂与关节、3D 视图、重力补偿、主菜单，以及笛卡尔阻抗和导纳的参数页。全部页面见下方[触摸屏](#触摸屏)一节。
+
+<table align="center">
+  <tr>
+    <td align="center"><a href="website/static/video/touchscreen-tour.mp4"><img src="website/static/img/demo/touchscreen-tour.webp" width="400" alt="触摸屏操作（37 秒）"></a><br><sub>触摸屏操作（37 秒）</sub></td>
+  </tr>
+</table>
+
 ## 触摸屏
 
 <table align="center">
