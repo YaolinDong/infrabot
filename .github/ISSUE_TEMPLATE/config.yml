@@ -7,7 +7,7 @@ contact_links:
     url: https://github.com/YaolinDong/infrabot-pcb-4p3/issues
     about: Schematics, PCB, BOM and assembly.
   - name: Controller enclosure
-    url: https://github.com/YaolinDong/infrabot-enclosure-4p3/issues
+    url: https://github.com/YaolinDong/infrabot-pcb-4p3-enclosure/issues
     about: Printed parts, fit and assembly hardware.
   - name: Robot description (URDF, meshes, ROS 2 package)
     url: https://github.com/YaolinDong/infrabot-description/issues

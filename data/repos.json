@@ -10,20 +10,28 @@
       "zh": "H7C 机械臂的机械图纸：含关节电机的整机 STEP、43 种机加工零件的 STEP，以及带零件预览的物料清单。"
     },
     {
+      "name": "infrabot-description",
+      "status": "available",
+      "version": "0.1.0",
+      "license": "Apache-2.0",
+      "en": "H7C URDF, meshes and identified inertia and friction. ROS 2 Jazzy package.",
+      "zh": "H7C 的 URDF、网格和辨识得到的惯量与摩擦参数，ROS 2 Jazzy 功能包。"
+    },
+    {
+      "name": "infrabot-pcb-4p3-enclosure",
+      "status": "available",
+      "version": "S8 · C3",
+      "license": "CERN-OHL-P-2.0 · MIT · CC-BY-4.0",
+      "en": "3D-printable enclosures for the 4.3-inch controller: Simple S8 with two shells and Deluxe C3 with keycaps and light pipes. STL and STEP.",
+      "zh": "4.3 寸控制器的 3D 打印外壳：简单版 S8 为上下壳两件，精装版 C3 带键帽和导光柱。提供 STL 和 STEP。"
+    },
+    {
       "name": "infrabot-pcb-4p3",
       "status": "available",
       "version": "R8",
       "license": "CERN-OHL-P-2.0 · MIT · CC-BY-4.0",
       "en": "Four-layer carrier board for the STM32H743 core module and 4.3-inch panel: EasyEDA project, schematics, Gerbers, BOM and CPL.",
       "zh": "STM32H743 核心板和 4.3 寸屏的四层底板：嘉立创 EDA 工程、原理图、Gerber、BOM 和坐标文件。"
-    },
-    {
-      "name": "infrabot-enclosure-4p3",
-      "status": "available",
-      "version": "S8 · C3",
-      "license": "CERN-OHL-P-2.0 · MIT · CC-BY-4.0",
-      "en": "3D-printable enclosures for the 4.3-inch controller: Simple S8 with two shells and Deluxe C3 with keycaps and light pipes. STL and STEP.",
-      "zh": "4.3 寸控制器的 3D 打印外壳：简单版 S8 为上下壳两件，精装版 C3 带键帽和导光柱。提供 STL 和 STEP。"
     },
     {
       "name": "infrabot-firmware",
@@ -36,26 +44,18 @@
     {
       "name": "infrabot-sdk",
       "status": "available",
-      "version": "0.1.2",
+      "version": "0.1.3",
       "license": "Apache-2.0",
       "en": "Linux C++17 and Python SDK over Ethernet, Qt control GUI and firmware update tools.",
       "zh": "基于以太网的 Linux C++17 / Python SDK、Qt 控制界面和固件升级工具。"
     },
     {
-      "name": "infrabot-description",
-      "status": "available",
-      "version": "0.1.0",
-      "license": "Apache-2.0",
-      "en": "H7C URDF, meshes and identified inertia and friction. ROS 2 Jazzy package.",
-      "zh": "H7C 的 URDF、网格和辨识得到的惯量与摩擦参数，ROS 2 Jazzy 功能包。"
-    },
-    {
       "name": "infrabot-ros2",
-      "status": "planned",
-      "version": "",
-      "license": "",
-      "en": "ROS 2 driver.",
-      "zh": "ROS 2 驱动。"
+      "status": "available",
+      "version": "0.1.1",
+      "license": "Apache-2.0",
+      "en": "ROS 2 Jazzy ros2_control driver for J1–J7 with a 1 kHz controller manager, joint trajectory controller and mock hardware.",
+      "zh": "ROS 2 Jazzy 的 ros2_control 驱动，控制 J1–J7：1 kHz 控制循环、关节轨迹控制器和 mock 硬件。"
     },
     {
       "name": "lerobot-robot-infrabot",

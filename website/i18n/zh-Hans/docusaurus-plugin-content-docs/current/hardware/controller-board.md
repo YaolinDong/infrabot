@@ -26,7 +26,7 @@ title: 控制底板
 
 ## 外壳
 
-[infrabot-enclosure-4p3](https://github.com/YaolinDong/infrabot-enclosure-4p3) 提供 R8 底板、核心板和 4.3 寸屏的 3D 打印外壳，有 STL 和 STEP 文件：
+[infrabot-pcb-4p3-enclosure](https://github.com/YaolinDong/infrabot-pcb-4p3-enclosure) 提供 R8 底板、核心板和 4.3 寸屏的 3D 打印外壳，有 STL 和 STEP 文件：
 
 - **简单版 S8**：上下壳两件，直接使用板上的按键和指示灯。
 - **精装版 C3**：9 个打印件，带 4 个键帽和 2 根透明导光柱，另有 2 个选用的试装件。

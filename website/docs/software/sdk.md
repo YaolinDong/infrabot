@@ -48,4 +48,4 @@ Call only RT functions from a 1 kHz loop. For the lowest host latency use a PREE
 
 ## Compatibility
 
-SDK 0.1.2 speaks protocol 1.0. See [Compatibility](../compatibility.md).
+SDK 0.1.3 speaks protocol 1.0. See [Compatibility](../compatibility.md).

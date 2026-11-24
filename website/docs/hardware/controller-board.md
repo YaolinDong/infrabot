@@ -26,7 +26,7 @@ Ordering, assembly and interface details: [assembly guide](https://github.com/Ya
 
 ## Enclosure
 
-[infrabot-enclosure-4p3](https://github.com/YaolinDong/infrabot-enclosure-4p3) has 3D-printable enclosures for the R8 board, the core module and the 4.3-inch panel, with STL and STEP files:
+[infrabot-pcb-4p3-enclosure](https://github.com/YaolinDong/infrabot-pcb-4p3-enclosure) has 3D-printable enclosures for the R8 board, the core module and the 4.3-inch panel, with STL and STEP files:
 
 - **Simple S8**: two shells. The board's own switches and LEDs are used directly.
 - **Deluxe C3**: nine printed parts with four keycaps and two transparent light pipes, plus two optional fit-test parts.

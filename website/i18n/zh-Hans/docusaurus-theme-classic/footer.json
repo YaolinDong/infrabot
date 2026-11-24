@@ -31,13 +31,17 @@
     "message": "infrabot-pcb-4p3",
     "description": "The label of footer link with label=infrabot-pcb-4p3 linking to https://github.com/YaolinDong/infrabot-pcb-4p3"
   },
-  "link.item.label.infrabot-enclosure-4p3": {
-    "message": "infrabot-enclosure-4p3",
-    "description": "The label of footer link with label=infrabot-enclosure-4p3 linking to https://github.com/YaolinDong/infrabot-enclosure-4p3"
+  "link.item.label.infrabot-pcb-4p3-enclosure": {
+    "message": "infrabot-pcb-4p3-enclosure",
+    "description": "The label of footer link with label=infrabot-pcb-4p3-enclosure linking to https://github.com/YaolinDong/infrabot-pcb-4p3-enclosure"
   },
   "link.item.label.infrabot-hardware": {
     "message": "infrabot-hardware",
     "description": "The label of footer link with label=infrabot-hardware linking to https://github.com/YaolinDong/infrabot-hardware"
+  },
+  "link.item.label.infrabot-ros2": {
+    "message": "infrabot-ros2",
+    "description": "The label of footer link with label=infrabot-ros2 linking to https://github.com/YaolinDong/infrabot-ros2"
   },
   "link.item.label.GitHub": {
     "message": "GitHub",
