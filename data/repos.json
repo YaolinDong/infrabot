@@ -2,12 +2,12 @@
   "owner": "YaolinDong",
   "repositories": [
     {
-      "name": "infrabot-description",
+      "name": "infrabot-hardware",
       "status": "available",
       "version": "0.1.0",
-      "license": "Apache-2.0",
-      "en": "H7C URDF, meshes and identified inertia and friction. ROS 2 Jazzy package.",
-      "zh": "H7C 的 URDF、网格和辨识得到的惯量与摩擦参数，ROS 2 Jazzy 功能包。"
+      "license": "CERN-OHL-S-2.0 · MIT · CC-BY-4.0",
+      "en": "H7C arm mechanical CAD: assembly STEP with the joint motors, STEP files for the 43 machined parts, and a BOM with part previews.",
+      "zh": "H7C 机械臂的机械图纸：含关节电机的整机 STEP、43 种机加工零件的 STEP，以及带零件预览的物料清单。"
     },
     {
       "name": "infrabot-pcb-4p3",
@@ -26,14 +26,6 @@
       "zh": "4.3 寸控制器的 3D 打印外壳：简单版 S8 为上下壳两件，精装版 C3 带键帽和导光柱。提供 STL 和 STEP。"
     },
     {
-      "name": "infrabot-hardware",
-      "status": "available",
-      "version": "0.1.0",
-      "license": "CERN-OHL-S-2.0 · MIT · CC-BY-4.0",
-      "en": "H7C arm mechanical CAD: assembly STEP with the joint motors, STEP files for the 43 machined parts, and a BOM with part previews.",
-      "zh": "H7C 机械臂的机械图纸：含关节电机的整机 STEP、43 种机加工零件的 STEP，以及带零件预览的物料清单。"
-    },
-    {
       "name": "infrabot-firmware",
       "status": "available",
       "version": "0.1.1",
@@ -48,6 +40,14 @@
       "license": "Apache-2.0",
       "en": "Linux C++17 and Python SDK over Ethernet, Qt control GUI and firmware update tools.",
       "zh": "基于以太网的 Linux C++17 / Python SDK、Qt 控制界面和固件升级工具。"
+    },
+    {
+      "name": "infrabot-description",
+      "status": "available",
+      "version": "0.1.0",
+      "license": "Apache-2.0",
+      "en": "H7C URDF, meshes and identified inertia and friction. ROS 2 Jazzy package.",
+      "zh": "H7C 的 URDF、网格和辨识得到的惯量与摩擦参数，ROS 2 Jazzy 功能包。"
     },
     {
       "name": "infrabot-ros2",
