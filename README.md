@@ -113,7 +113,7 @@ A walk through the pages on the running arm: arm and joints, 3D view, gravity co
 | [infrabot-pcb-4p3](https://github.com/YaolinDong/infrabot-pcb-4p3) | Four-layer carrier board for the STM32H743 core module and 4.3-inch panel: EasyEDA project, schematics, Gerbers, BOM and CPL. | Available | R8 | CERN-OHL-P-2.0 · MIT · CC-BY-4.0 |
 | [infrabot-firmware](https://github.com/YaolinDong/infrabot-firmware) | STM32H743 firmware: 1 kHz joint control, gravity compensation, impedance and admittance, touchscreen UI, signed A/B updates. | Available | 0.2.0 | Apache-2.0 |
 | [infrabot-sdk](https://github.com/YaolinDong/infrabot-sdk) | Linux C++17 and Python SDK over Ethernet, Qt control GUI and firmware update tools. | Available | 0.2.1 | Apache-2.0 |
-| [infrabot-ros2](https://github.com/YaolinDong/infrabot-ros2) | ROS 2 Jazzy ros2_control driver for J1–J7 with a 1 kHz controller manager, joint trajectory controller and mock hardware. | Available | 0.1.2 | Apache-2.0 |
+| [infrabot-ros2](https://github.com/YaolinDong/infrabot-ros2) | ROS 2 Jazzy ros2_control driver for J1–J7 with a 1 kHz controller manager, joint trajectory controller and mock hardware. | Available | 0.1.3 | Apache-2.0 |
 | `lerobot-robot-infrabot` | LeRobot robot plugin for teleoperation, recording and policy deployment. | Planned | — | — |
 <!-- repos:end -->
 

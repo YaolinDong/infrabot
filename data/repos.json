@@ -52,7 +52,7 @@
     {
       "name": "infrabot-ros2",
       "status": "available",
-      "version": "0.1.2",
+      "version": "0.1.3",
       "license": "Apache-2.0",
       "en": "ROS 2 Jazzy ros2_control driver for J1–J7 with a 1 kHz controller manager, joint trajectory controller and mock hardware.",
       "zh": "ROS 2 Jazzy 的 ros2_control 驱动，控制 J1–J7：1 kHz 控制循环、关节轨迹控制器和 mock 硬件。"
