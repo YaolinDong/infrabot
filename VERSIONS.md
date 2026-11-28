@@ -6,14 +6,16 @@ InfraBot releases are versioned per repository. This page lists which versions w
 
 ## Tested versions
 
-| Date | Arm | Firmware | SDK | Protocol | Description | Controller |
-|---|---|---|---|---|---|---|
-| 2026-11-28 | H7C | 0.2.0 | 0.2.1 | 1.1 | 0.1.0 | Fire H743 Challenger V2 core module; 4.3-inch carrier board R8; optional enclosure S8 or C3 |
-| 2026-11-26 | H7C | 0.2.0 | 0.2.0 | 1.1 | 0.1.0 | Fire H743 Challenger V2 core module; 4.3-inch carrier board R8; optional enclosure S8 or C3 |
-| 2026-11-26 | H7C | 0.1.2 | 0.1.4 | 1.0 | 0.1.0 | Fire H743 Challenger V2 core module; 4.3-inch carrier board R8; optional enclosure S8 or C3 |
-| 2026-11-24 | H7C | 0.1.1 | 0.1.3 | 1.0 | 0.1.0 | Fire H743 Challenger V2 core module; 4.3-inch carrier board R8; optional enclosure S8 or C3 |
-| 2026-11-24 | H7C | 0.1.1 | 0.1.2 | 1.0 | 0.1.0 | Fire H743 Challenger V2 core module; 4.3-inch carrier board R8; optional enclosure S8 or C3 |
-| 2026-11-23 | H7C | 0.1.0 | 0.1.0 | 1.0 | 0.1.0 | Fire H743 Challenger V2 core module; 4.3-inch carrier board R8; optional enclosure S8 or C3 |
+| Date | Arm | Firmware | SDK | ROS 2 | Protocol | Description | Controller |
+|---|---|---|---|---|---|---|---|
+| 2026-11-28 | H7C | 0.2.0 | 0.2.1 | 0.1.3 | 1.1 | 0.1.0 | Fire H743 Challenger V2 core module; 4.3-inch carrier board R8; optional enclosure S8 or C3 |
+| 2026-11-26 | H7C | 0.2.0 | 0.2.0 | — | 1.1 | 0.1.0 | Fire H743 Challenger V2 core module; 4.3-inch carrier board R8; optional enclosure S8 or C3 |
+| 2026-11-26 | H7C | 0.1.2 | 0.1.4 | — | 1.0 | 0.1.0 | Fire H743 Challenger V2 core module; 4.3-inch carrier board R8; optional enclosure S8 or C3 |
+| 2026-11-24 | H7C | 0.1.1 | 0.1.3 | 0.1.2 | 1.0 | 0.1.0 | Fire H743 Challenger V2 core module; 4.3-inch carrier board R8; optional enclosure S8 or C3 |
+| 2026-11-24 | H7C | 0.1.1 | 0.1.2 | — | 1.0 | 0.1.0 | Fire H743 Challenger V2 core module; 4.3-inch carrier board R8; optional enclosure S8 or C3 |
+| 2026-11-23 | H7C | 0.1.0 | 0.1.0 | — | 1.0 | 0.1.0 | Fire H743 Challenger V2 core module; 4.3-inch carrier board R8; optional enclosure S8 or C3 |
+
+ROS 2 is the [infrabot-ros2](https://github.com/YaolinDong/infrabot-ros2) driver run on the arm in that combination; — means the driver was not part of that test.
 
 ## Protocol rules
 
@@ -34,14 +36,16 @@ InfraBot 每个仓库各自发布版本，这里列出哪些版本可以一起�
 
 ### 测试过的版本组合
 
-| 日期 | 机械臂 | 固件 | SDK | 协议 | 描述包 | 控制器 |
-|---|---|---|---|---|---|---|
-| 2026-11-28 | H7C | 0.2.0 | 0.2.1 | 1.1 | 0.1.0 | 野火 H743 挑战者 V2 核心板；4.3 寸底板 R8；可选外壳 S8 或 C3 |
-| 2026-11-26 | H7C | 0.2.0 | 0.2.0 | 1.1 | 0.1.0 | 野火 H743 挑战者 V2 核心板；4.3 寸底板 R8；可选外壳 S8 或 C3 |
-| 2026-11-26 | H7C | 0.1.2 | 0.1.4 | 1.0 | 0.1.0 | 野火 H743 挑战者 V2 核心板；4.3 寸底板 R8；可选外壳 S8 或 C3 |
-| 2026-11-24 | H7C | 0.1.1 | 0.1.3 | 1.0 | 0.1.0 | 野火 H743 挑战者 V2 核心板；4.3 寸底板 R8；可选外壳 S8 或 C3 |
-| 2026-11-24 | H7C | 0.1.1 | 0.1.2 | 1.0 | 0.1.0 | 野火 H743 挑战者 V2 核心板；4.3 寸底板 R8；可选外壳 S8 或 C3 |
-| 2026-11-23 | H7C | 0.1.0 | 0.1.0 | 1.0 | 0.1.0 | 野火 H743 挑战者 V2 核心板；4.3 寸底板 R8；可选外壳 S8 或 C3 |
+| 日期 | 机械臂 | 固件 | SDK | ROS 2 | 协议 | 描述包 | 控制器 |
+|---|---|---|---|---|---|---|---|
+| 2026-11-28 | H7C | 0.2.0 | 0.2.1 | 0.1.3 | 1.1 | 0.1.0 | 野火 H743 挑战者 V2 核心板；4.3 寸底板 R8；可选外壳 S8 或 C3 |
+| 2026-11-26 | H7C | 0.2.0 | 0.2.0 | — | 1.1 | 0.1.0 | 野火 H743 挑战者 V2 核心板；4.3 寸底板 R8；可选外壳 S8 或 C3 |
+| 2026-11-26 | H7C | 0.1.2 | 0.1.4 | — | 1.0 | 0.1.0 | 野火 H743 挑战者 V2 核心板；4.3 寸底板 R8；可选外壳 S8 或 C3 |
+| 2026-11-24 | H7C | 0.1.1 | 0.1.3 | 0.1.2 | 1.0 | 0.1.0 | 野火 H743 挑战者 V2 核心板；4.3 寸底板 R8；可选外壳 S8 或 C3 |
+| 2026-11-24 | H7C | 0.1.1 | 0.1.2 | — | 1.0 | 0.1.0 | 野火 H743 挑战者 V2 核心板；4.3 寸底板 R8；可选外壳 S8 或 C3 |
+| 2026-11-23 | H7C | 0.1.0 | 0.1.0 | — | 1.0 | 0.1.0 | 野火 H743 挑战者 V2 核心板；4.3 寸底板 R8；可选外壳 S8 或 C3 |
+
+ROS 2 列是该组合在机械臂上实际运行过的 [infrabot-ros2](https://github.com/YaolinDong/infrabot-ros2) 驱动版本；— 表示那次测试没有用驱动。
 
 ### 协议规则
 

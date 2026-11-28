@@ -7,14 +7,16 @@ title: Compatibility
 
 Each repository is versioned on its own. The table lists versions tested together, by the date they were tested.
 
-| Date | Arm | Firmware | SDK | Protocol | Description | Controller |
-|---|---|---|---|---|---|---|
-| 2026-11-28 | H7C | 0.2.0 | 0.2.1 | 1.1 | 0.1.0 | Fire H743 Challenger V2 core module; 4.3-inch carrier board R8; optional enclosure S8 or C3 |
-| 2026-11-26 | H7C | 0.2.0 | 0.2.0 | 1.1 | 0.1.0 | Fire H743 Challenger V2 core module; 4.3-inch carrier board R8; optional enclosure S8 or C3 |
-| 2026-11-26 | H7C | 0.1.2 | 0.1.4 | 1.0 | 0.1.0 | Fire H743 Challenger V2 core module; 4.3-inch carrier board R8; optional enclosure S8 or C3 |
-| 2026-11-24 | H7C | 0.1.1 | 0.1.3 | 1.0 | 0.1.0 | Fire H743 Challenger V2 core module; 4.3-inch carrier board R8; optional enclosure S8 or C3 |
-| 2026-11-24 | H7C | 0.1.1 | 0.1.2 | 1.0 | 0.1.0 | Fire H743 Challenger V2 core module; 4.3-inch carrier board R8; optional enclosure S8 or C3 |
-| 2026-11-23 | H7C | 0.1.0 | 0.1.0 | 1.0 | 0.1.0 | Fire H743 Challenger V2 core module; 4.3-inch carrier board R8; optional enclosure S8 or C3 |
+| Date | Arm | Firmware | SDK | ROS 2 | Protocol | Description | Controller |
+|---|---|---|---|---|---|---|---|
+| 2026-11-28 | H7C | 0.2.0 | 0.2.1 | 0.1.3 | 1.1 | 0.1.0 | Fire H743 Challenger V2 core module; 4.3-inch carrier board R8; optional enclosure S8 or C3 |
+| 2026-11-26 | H7C | 0.2.0 | 0.2.0 | — | 1.1 | 0.1.0 | Fire H743 Challenger V2 core module; 4.3-inch carrier board R8; optional enclosure S8 or C3 |
+| 2026-11-26 | H7C | 0.1.2 | 0.1.4 | — | 1.0 | 0.1.0 | Fire H743 Challenger V2 core module; 4.3-inch carrier board R8; optional enclosure S8 or C3 |
+| 2026-11-24 | H7C | 0.1.1 | 0.1.3 | 0.1.2 | 1.0 | 0.1.0 | Fire H743 Challenger V2 core module; 4.3-inch carrier board R8; optional enclosure S8 or C3 |
+| 2026-11-24 | H7C | 0.1.1 | 0.1.2 | — | 1.0 | 0.1.0 | Fire H743 Challenger V2 core module; 4.3-inch carrier board R8; optional enclosure S8 or C3 |
+| 2026-11-23 | H7C | 0.1.0 | 0.1.0 | — | 1.0 | 0.1.0 | Fire H743 Challenger V2 core module; 4.3-inch carrier board R8; optional enclosure S8 or C3 |
+
+ROS 2 is the [infrabot-ros2](https://github.com/YaolinDong/infrabot-ros2) driver run on the arm in that combination; — means the driver was not part of that test.
 
 ## Protocol
 
