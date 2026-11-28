@@ -97,7 +97,7 @@
 | 制作控制底板 | [infrabot-pcb-4p3](https://github.com/YaolinDong/infrabot-pcb-4p3) · [装配指南](https://github.com/YaolinDong/infrabot-pcb-4p3/blob/main/docs/assembly.md) |
 | 打印控制器外壳 | [infrabot-pcb-4p3-enclosure](https://github.com/YaolinDong/infrabot-pcb-4p3-enclosure) · [S8 装配](https://github.com/YaolinDong/infrabot-pcb-4p3-enclosure/blob/main/simple/README.zh-CN.md) · [C3 装配](https://github.com/YaolinDong/infrabot-pcb-4p3-enclosure/blob/main/deluxe/README.zh-CN.md) |
 | 编译并烧录固件 | [infrabot-firmware](https://github.com/YaolinDong/infrabot-firmware) · [编译](https://github.com/YaolinDong/infrabot-firmware/blob/main/docs/build.md) · [烧录](https://github.com/YaolinDong/infrabot-firmware/blob/main/docs/flashing.md) |
-| 用 C++ 或 Python 控制机械臂 | [infrabot-sdk](https://github.com/YaolinDong/infrabot-sdk) · [API](https://github.com/YaolinDong/infrabot-sdk/blob/main/docs/api.md) · [示例](https://github.com/YaolinDong/infrabot-sdk/tree/main/examples) |
+| 用 C++ 或 Python 控制机械臂 | [infrabot-sdk](https://github.com/YaolinDong/infrabot-sdk) · [API](https://yaolindong.github.io/infrabot-sdk/) · [示例](https://github.com/YaolinDong/infrabot-sdk/tree/main/examples) |
 | 用 ROS 2 控制机械臂 | [infrabot-ros2](https://github.com/YaolinDong/infrabot-ros2) |
 | 查看哪些版本可以一起使用 | [VERSIONS.md](VERSIONS.md) |
 | 安全地操作机械臂 | [SAFETY.md](SAFETY.md) |
@@ -112,7 +112,7 @@
 | [infrabot-pcb-4p3-enclosure](https://github.com/YaolinDong/infrabot-pcb-4p3-enclosure) | 4.3 寸控制器的 3D 打印外壳：简单版 S8 为上下壳两件，精装版 C3 带键帽和导光柱。提供 STL 和 STEP。 | 已发布 | S8 · C3 | CERN-OHL-P-2.0 · MIT · CC-BY-4.0 |
 | [infrabot-pcb-4p3](https://github.com/YaolinDong/infrabot-pcb-4p3) | STM32H743 核心板和 4.3 寸屏的四层底板：嘉立创 EDA 工程、原理图、Gerber、BOM 和坐标文件。 | 已发布 | R8 | CERN-OHL-P-2.0 · MIT · CC-BY-4.0 |
 | [infrabot-firmware](https://github.com/YaolinDong/infrabot-firmware) | STM32H743 固件：1 kHz 关节控制、重力补偿、阻抗与导纳、触摸屏界面、签名 A/B 升级。 | 已发布 | 0.2.0 | Apache-2.0 |
-| [infrabot-sdk](https://github.com/YaolinDong/infrabot-sdk) | 基于以太网的 Linux C++17 / Python SDK、Qt 控制界面和固件升级工具。 | 已发布 | 0.2.0 | Apache-2.0 |
+| [infrabot-sdk](https://github.com/YaolinDong/infrabot-sdk) | 基于以太网的 Linux C++17 / Python SDK、Qt 控制界面和固件升级工具。 | 已发布 | 0.2.1 | Apache-2.0 |
 | [infrabot-ros2](https://github.com/YaolinDong/infrabot-ros2) | ROS 2 Jazzy 的 ros2_control 驱动，控制 J1–J7：1 kHz 控制循环、关节轨迹控制器和 mock 硬件。 | 已发布 | 0.1.2 | Apache-2.0 |
 | `lerobot-robot-infrabot` | LeRobot 机器人插件，用于遥操作、数据采集和策略部署。 | 计划中 | — | — |
 <!-- repos:end -->

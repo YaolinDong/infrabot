@@ -44,7 +44,7 @@
     {
       "name": "infrabot-sdk",
       "status": "available",
-      "version": "0.2.0",
+      "version": "0.2.1",
       "license": "Apache-2.0",
       "en": "Linux C++17 and Python SDK over Ethernet, Qt control GUI and firmware update tools.",
       "zh": "基于以太网的 Linux C++17 / Python SDK、Qt 控制界面和固件升级工具。"

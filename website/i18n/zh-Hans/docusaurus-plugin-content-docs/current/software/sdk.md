@@ -5,7 +5,7 @@ title: C++ / Python SDK
 
 # C++ / Python SDK
 
-源码、安装和示例：[infrabot-sdk](https://github.com/YaolinDong/infrabot-sdk) · [API 说明](https://github.com/YaolinDong/infrabot-sdk/blob/main/docs/api.md) · [实时循环](https://github.com/YaolinDong/infrabot-sdk/blob/main/docs/realtime.md) · [C++ 示例](https://github.com/YaolinDong/infrabot-sdk/tree/main/examples/cpp) · [Python 示例](https://github.com/YaolinDong/infrabot-sdk/tree/main/examples/python)
+源码、安装和示例：[infrabot-sdk](https://github.com/YaolinDong/infrabot-sdk) · [API 参考](https://yaolindong.github.io/infrabot-sdk/) · [实时循环](https://github.com/YaolinDong/infrabot-sdk/blob/main/docs/realtime.md) · [C++ 示例](https://github.com/YaolinDong/infrabot-sdk/tree/main/examples/cpp) · [Python 示例](https://github.com/YaolinDong/infrabot-sdk/tree/main/examples/python)
 
 SDK 是 Linux 上的 C++17 库，带 Python 绑定。一个 `Robot` 对象负责握手、遥测和指令。Qt 控制界面也使用这套库。
 
@@ -48,4 +48,4 @@ finally:
 
 ## 兼容性
 
-SDK 0.2.0 使用协议 1.1：参数服务和诊断查询需要固件 0.2.0，协议 1.0 的固件仍可连接。见[版本兼容](../compatibility.md)。
+SDK 0.2.1 使用协议 1.1：参数服务和诊断查询需要固件 0.2.0，协议 1.0 的固件仍可连接。见[版本兼容](../compatibility.md)。

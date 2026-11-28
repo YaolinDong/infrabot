@@ -5,7 +5,7 @@ title: C++ and Python SDK
 
 # C++ and Python SDK
 
-Source, installation and examples: [infrabot-sdk](https://github.com/YaolinDong/infrabot-sdk) · [API reference](https://github.com/YaolinDong/infrabot-sdk/blob/main/docs/api.md) · [real-time loop](https://github.com/YaolinDong/infrabot-sdk/blob/main/docs/realtime.md) · [C++ examples](https://github.com/YaolinDong/infrabot-sdk/tree/main/examples/cpp) · [Python examples](https://github.com/YaolinDong/infrabot-sdk/tree/main/examples/python)
+Source, installation and examples: [infrabot-sdk](https://github.com/YaolinDong/infrabot-sdk) · [API reference](https://yaolindong.github.io/infrabot-sdk/) · [real-time loop](https://github.com/YaolinDong/infrabot-sdk/blob/main/docs/realtime.md) · [C++ examples](https://github.com/YaolinDong/infrabot-sdk/tree/main/examples/cpp) · [Python examples](https://github.com/YaolinDong/infrabot-sdk/tree/main/examples/python)
 
 The SDK is a Linux C++17 library with Python bindings. One `Robot` object handles discovery, telemetry and commands. The Qt control GUI uses the same library.
 
@@ -48,4 +48,4 @@ Call only RT functions from a 1 kHz loop. For the lowest host latency use a PREE
 
 ## Compatibility
 
-SDK 0.2.0 speaks protocol 1.1: the parameter service and the diagnostic snapshot need firmware 0.2.0, and protocol 1.0 firmware still connects. See [Compatibility](../compatibility.md).
+SDK 0.2.1 speaks protocol 1.1: the parameter service and the diagnostic snapshot need firmware 0.2.0, and protocol 1.0 firmware still connects. See [Compatibility](../compatibility.md).
